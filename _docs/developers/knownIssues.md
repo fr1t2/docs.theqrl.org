@@ -21,7 +21,7 @@ The chart below lists all of the known issues that have been reported to date.
 > If you have come across something not working as you would expect please report it to the team in a github issue. [theQRL GitHub](https://github.com/theqrl/qrl/issues)
 {: .info}
 
-## Known Issues
+### Known Issues
 
 | Issue Number | Issue Name | Description | Impact |
 |--------------|------------|-------------|--------|
