@@ -1,5 +1,6 @@
 ---
 title: Mobile Wallet
+layout: docs
 categories: wallet
 tags: wallet
 ---
