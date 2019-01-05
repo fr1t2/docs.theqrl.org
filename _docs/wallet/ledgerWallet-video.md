@@ -1,6 +1,5 @@
 ---
-title: Mobile Wallet
-layout: docs.video
+title: Ledger Nano-S Demo
 categories: wallet
 tags: wallet
 ---
