@@ -1,5 +1,6 @@
 ---
 title: Ledger Nano-S Demo
+layout: docs.video
 categories: wallet
 tags: wallet
 ---
