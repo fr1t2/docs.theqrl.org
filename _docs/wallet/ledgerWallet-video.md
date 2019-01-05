@@ -14,19 +14,26 @@ tags: wallet
 {:data-video="NL_u9biLy1g"}
 
 <div markdown="1">
-We show you how to use a Ledger Nano-S to send a transaction on the QRL network. We will also go over sending a message on the QRL network.
+QRL Ledger Nano-S demo showing integration between the Nano-S and the [QRL Wallet](https://wallet.theqrl.org).
+</div>
 
+## Sending a Transaction
+{:data-time="7"}
+{:data-video="NL_u9biLy1g"}
+
+
+<div markdown="1">
+Sending a transaction on the QRL network using the Ledger Nano-S. This is the most secure way to send and store quanta.
 
 * Open a QRL Wallet using the Ledger Nano-S device
 * Enter transaction details into the wallet application and click send
 * The transaction shows on the Nano-S for verification of details
-* If 
-* the details match sign the transaction using the Nano-S
+* If the details match sign the transaction using the Nano-S
 
 The transaction will be sent to the network and you can monitor the status using both the wallet application, as well as the [QRL block explorer](https://explorer.theqrl.org)
 </div>
 
-## Sending a Message into the Network
+## Sending a Message
 {:data-time="133"}
 {:data-video="NL_u9biLy1g"}
 
