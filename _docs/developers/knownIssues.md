@@ -23,11 +23,10 @@ The chart below lists all of the known issues that have been reported to date.
 
 ### Known Issues
 
-| Issue Number | Issue Name | Description | Impact |
+| Github Issue Number | Issue Name | Description | Impact |
 |--------------|------------|-------------|--------|
-| 001 | Segmentation fault | Upon updating the QRL node issuing the `pip3 install -U qrl` command will throw a Segmentation Fault (Core Dumped) error | None, the node continues to operate as expected, and does infact update to the latest code. |
-| 002 | Old SetupTools version installed by default | pip3 install -U qrl fails with old setuptools during install of qrl | Minor - Update setuptools prior to installing qrl using the python tools. |
-| 003 | Too many open files | When the known_peers file grows too large, Linux throws an issue | Minor - The node will continue through the issues keeping to the limits set and will take a bit longer to startup. |
+| [750](https://github.com/theQRL/QRL/issues/750) | Segmentation fault | Upon updating the QRL node issuing the `pip3 install -U qrl` command will throw a Segmentation Fault (Core Dumped) error | None, the node continues to operate as expected, and does infact update to the latest code. |
+| [1611](https://github.com/theQRL/QRL/issues/1611) | Too many open files | When the known_peers file grows too large, Linux throws an issue | Minor - The node will continue through the issues keeping to the limits set and will take a bit longer to startup. |
 
 
 ### Segmentation Fault
