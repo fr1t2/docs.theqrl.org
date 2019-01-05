@@ -27,7 +27,7 @@ The transaction will be sent to the network and you can monitor the status using
 </div>
 
 ## Sending a Message into the Network
-{:data-time="2:10"}
+{:data-time="133"}
 {:data-video="NL_u9biLy1g"}
 
 <div markdown="1">
