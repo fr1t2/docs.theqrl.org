@@ -62,7 +62,5 @@ $(document).ready(function() {
       body.classList.remove('t--dark');
       body.classList.add('t--light');
     }
-  })
-;
-
+  });
 });
