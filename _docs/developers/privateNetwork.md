@@ -12,8 +12,7 @@ This documentation assumes that you have already followed the [QRL node installa
 
 ## Configuring config.yml
 
-In order to run a private chain, you need to create `~/.qrl/config.yml` with following content at minimum. See 
-
+In order to run a private chain, you need to create `~/.qrl/config.yml` with following content at minimum. 
 ```yml
 genesis_difficulty: 500
 mining_enabled: True
