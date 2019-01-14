@@ -1,6 +1,6 @@
 ---
 title: Mobile Wallet
-layout: docs.video
+layout: docs
 categories: wallet
 tags: wallet
 ---
