@@ -1,6 +1,7 @@
 ---
 title: Mining with a QRL Node
 categories: mining
+description: Mining QRL using a fully synced node and a CPU
 tags: mining
 ---
 

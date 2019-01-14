@@ -1,6 +1,7 @@
 ---
 title: QRL Private Network
 categories: developers
+description: How to setup and run a private QRL network. Used by developers.
 tags: developers
 ---
 

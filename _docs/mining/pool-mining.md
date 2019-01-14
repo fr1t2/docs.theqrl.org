@@ -1,6 +1,7 @@
 ---
 title: Pool Mining QRL 
 categories: mining
+description: Mining QRL using a community run mining pool.
 tags: mining
 ---
 

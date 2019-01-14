@@ -1,6 +1,7 @@
 ---
 title: Qryptonight
 categories: developers
+description: Technical description of the library used by the Quantum Resistant Ledger.
 tags: developers
 ---
 

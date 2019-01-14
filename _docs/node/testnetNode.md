@@ -1,6 +1,7 @@
 ---
 title: QRL Testnet Node
 categories: node
+description: Instructions for setting up a QRL Testnet node.
 tags: node
 ---
 

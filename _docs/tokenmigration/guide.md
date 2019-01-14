@@ -1,6 +1,7 @@
 ---
 title: QRL Token Migration
 categories: Token Swap
+description: Instructions for migrating the ERC20 QRL token to the Mainnet QRL coin. 
 tags: Token Swap
 ---
 ![QRL Token Migration Flowchart](/assets/tokenswap/swap/migration_flowchart_improved.png)

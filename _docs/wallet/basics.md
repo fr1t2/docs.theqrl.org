@@ -1,6 +1,7 @@
 ---
 title: Wallet Basics
 categories: wallet
+description:
 tags: wallet
 ---
 

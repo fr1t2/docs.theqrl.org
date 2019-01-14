@@ -1,6 +1,7 @@
 ---
 title: Slaves.json
 categories: wallet
+description:
 tags: wallet
 ---
 

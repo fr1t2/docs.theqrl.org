@@ -1,6 +1,7 @@
 ---
 title: QRL Wallet App
 categories: wallet
+description: QRL Wallet application technical description and installation instructions.
 tags: wallet
 ---
 

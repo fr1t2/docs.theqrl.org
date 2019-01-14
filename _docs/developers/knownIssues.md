@@ -1,16 +1,13 @@
 ---
 title: Known Issues
 categories: developers
+description: Known issues that have been discovered in upstream dependencies. 
 tags: developers
 ---
 
 There are a few known issues we have come across due to the software upstream of QRL. While we strive to overcome programmatically any issues, sometimes there are situations where limitations exist outside of the QRL scope. This document is intended to clear up any issues seen when installing and running The QRL software. 
 
 It should be made clear that these are not "Bugs" and there is very little we can do to mitigate these limitations. We strive to work through and provide secure, audited code in any of the official channels we operate.
-
-
-
-
 
 ## QRL Node - Python
 

@@ -1,6 +1,7 @@
 ---
 title: Create Tokens
 categories: wallet
+description:
 tags: tokens
 ---
 

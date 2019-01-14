@@ -1,6 +1,7 @@
 ---
 title: Create Wallet From CLI
 categories: wallet
+description:
 tags: wallet
 ---
 

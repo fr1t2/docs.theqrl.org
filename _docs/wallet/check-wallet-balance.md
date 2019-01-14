@@ -1,6 +1,7 @@
 ---
 title: Check Wallet Balance
 categories: wallet
+description:
 tags: wallet
 ---
 

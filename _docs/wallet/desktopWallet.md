@@ -1,6 +1,7 @@
 ---
 title: Desktop Wallet
 categories: wallet
+description:
 tags: wallet
 ---
 

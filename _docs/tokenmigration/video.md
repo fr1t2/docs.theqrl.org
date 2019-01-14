@@ -1,6 +1,7 @@
 ---
 title: Video Guide
 layout: docs.video
+description: Video guide for migrating the ERC20 token to the Mainnet QRL coin.
 ---
 
 >

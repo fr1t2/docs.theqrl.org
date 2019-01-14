@@ -1,6 +1,7 @@
 ---
 title: QRL Node
 categories: node
+description: Installation and technical instructions for running a QRL node.
 tags: node
 ---
 

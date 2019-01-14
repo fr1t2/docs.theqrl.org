@@ -1,6 +1,7 @@
 ---
 title: Cold Wallet Setup
 categories: wallet
+description:
 tags: wallet
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: OTS Key Index
 categories: developers
+description: Writeup discussing the One Time Signature (OTS) keys used by the Quantum Resistant Ledger.
 tags: developers
 ---
 
@@ -92,7 +93,7 @@ From the example tree in the diagram, taking the merkle root as the public key, 
 
 
 
-A full signature, *S*, of a message, *M*, for a given OTS keypair includes: the signature, *s*, the ots key number, *n*, and the merkle authentication path. i.e. for OTS keypair *0 (thus n = 0): S = s, n*, OT S public key *0*, *H1, H2, H5, H6*, root Given the OTS public key and leaf hash can be deduced from *s*, and parent nodes can be computed from their children in fact this may be shortened to: *S = s, n, H2, H6, root* Where *S* is valid by verifying the OTS public key from *s* and *M*, then checking the hashes from the merkle authentication path recreate a matching merkle root (public key).
+A full signature, *S*, of a message, *M*, for a given OTS keypair includes: the signature, *s*, the OTS key number, *n*, and the merkle authentication path. i.e. for OTS keypair *0 (thus n = 0): S = s, n*, OT S public key *0*, *H1, H2, H5, H6*, root Given the OTS public key and leaf hash can be deduced from *s*, and parent nodes can be computed from their children in fact this may be shortened to: *S = s, n, H2, H6, root* Where *S* is valid by verifying the OTS public key from *s* and *M*, then checking the hashes from the merkle authentication path recreate a matching merkle root (public key).
 
 
 ## XMSS

@@ -2,6 +2,7 @@
 title: Ledger Nano-S Demo
 layout: docs.video
 categories: wallet
+description:
 tags: wallet
 ---
 

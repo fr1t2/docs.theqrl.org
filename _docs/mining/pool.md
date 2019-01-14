@@ -1,10 +1,9 @@
 ---
 title: Setup a QRL Pool
 categories: mining
+description: Instructions for setting up a mining pool to mine QRL using GPU and advanced hardware. 
 tags: mining
 ---
-
-
 
 To fully utilize the benefits of multiple devices or GPU mining rigs, one can setup a stratum pool and use multiple machines to mine as the same device, effectively raising the hashrate of the mining efforts and increasing the odds of finding blocks. 
 

@@ -1,6 +1,7 @@
 ---
 title: Mining QRL Quick Start
 categories: mining
+description: Guide to mining QRL using GPU or CPU. Start mining here.
 tags: mining
 ---
 
@@ -29,7 +30,7 @@ QRL uses the Monero7 algorithm allowing QRL to take advantage of the ASIC resist
 {: .info}
 
 
-Any software that pool mines for monero will work with QRL. You can find something that is compatible with your OS and setup following the guide found with the project you choose. Ask for help in the QRL Discord or in the Reddit forum if you need help. 
+Any software that pool mines for Monero will work with QRL. You can find something that is compatible with your OS and setup following the guide found with the project you choose. Ask for help in the QRL Discord or in the Reddit forum if you need help. 
 
 > When configuring your software, set everything up to mine Monero7, *instead* of using a Monero address, enter your *QRL* address into the "Worker" or "Address" field in the mining software.
 {: .info}

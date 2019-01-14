@@ -1,6 +1,7 @@
 ---
 title: QRL Wallet API
 categories: developers
+description: API documentation for the QRL Wallet.
 tags: developers
 ---
 

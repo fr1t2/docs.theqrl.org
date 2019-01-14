@@ -1,6 +1,7 @@
 ---
 title: QRL Notarization
 categories: info
+description: Technical discussion of the notarization features of The Quantum Resistant Ledger.
 tags: tools
 ---
 

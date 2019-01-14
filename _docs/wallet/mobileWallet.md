@@ -2,6 +2,7 @@
 title: Mobile Wallet
 layout: docs
 categories: wallet
+description:
 tags: wallet
 ---
 
