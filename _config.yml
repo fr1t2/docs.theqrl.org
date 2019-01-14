@@ -30,7 +30,7 @@ defaults:
     path: _docs
     type: docs
   values:
-    layout: docs
+    layout: docs 
 highlighter: rouge
 kramdown:
   input: GFM
@@ -47,3 +47,7 @@ plugins:
 #  GoogleAnalytics:          # Add, if you want to track with Google Analytics
 #    id:           # Required - replace with your tracking id
 #    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+url: "https://docs.theqrl.org" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
