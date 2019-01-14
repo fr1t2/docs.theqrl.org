@@ -32,12 +32,6 @@ For Android search QRL in the play store or follow this link.
 
 [Future Link to Play Store](#)
 
-## Usage
-
-Using the wallet is simple. Follow the instructions to create a new wallet and recieve funds. You can simply scan the QR code from another users wallet to send funds. 
-
-
----
 
 ## Building from Sources
 
