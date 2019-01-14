@@ -11,7 +11,7 @@ The QRL wallet has been extended to provide the same quantum resistance that is 
 This mobile application is based on the react-native framework to provide an Android and iOS implementation of the QRL wallet.
 All of the functions available in the web wallet have been extended into the mobile wallet. 
 
-![iOS Wallet](/assets/wallet/mobile/iosQrlWalletScreenshot.png)
+<img src="/assets/wallet/mobile/iosQrlWalletScreenshot.png" width="300" />
 
 
 > The mobile-wallet apps are still under heavy development. Please be aware that frequent changes will occur to this repository.
