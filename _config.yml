@@ -41,6 +41,7 @@ kramdown:
 markdown: kramdown
 theme: minima
 
+whitelist: [jekyll-analytics]
 plugins:
   - jekyll-analytics
   - jekyll-seo-tag
