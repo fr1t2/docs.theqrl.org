@@ -25,6 +25,7 @@ You can only use each key **ONCE**. When you've used your last key, you will no 
 {: .info}
 
 #### Best Wallet Practices 
+
 * Track all OTS Keys used in a spreadsheet *(ledger)*
 * Store your private keys somewhere safe, in an encrypted manner 
 
