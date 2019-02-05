@@ -1,7 +1,7 @@
 ---
 title: Explorer API
 categories: developers
-description: The QRL technical documentation.
+description: Explorer API documentation
 tags: developers
 ---
 
@@ -57,9 +57,9 @@ Get any block details by block number.
 > **Info:** `/api/block/` requests will only return in JSON format. Parse the response using json tools in a language of your choice. 
 {: .info}
 
+**cURL Example**
 
-
-```shell
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/block/34556
@@ -155,6 +155,8 @@ curl -XGET https://explorer.theqrl.org/api/block/34556
 }
 ```
 
+
+**Python Example**
 
 ```python
 def getblockByNumber(block_number):
@@ -284,7 +286,9 @@ Parse the response using json tools in a language of your choice.
 {: .info}
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/tx/c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b851a4c6
@@ -376,6 +380,8 @@ curl -XGET https://explorer.theqrl.org/api/tx/c9656d989bce2000c794314b73882b0ebb
 }
 ```
 
+
+**Python Example**
 
 ```python
 #Request
@@ -507,7 +513,9 @@ Parse the response using json tools in a language of your choice.
 {: .info}
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/a/Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc325ca36d86e
@@ -578,6 +586,8 @@ curl -XGET https://explorer.theqrl.org/api/a/Q01040007a591a62c23ed27adfe3df8eb81
 
 ```
 
+
+**Python Example**
 
 ```python
 # Request
@@ -667,7 +677,9 @@ Get the total QRL emission to date.
 > **Info:** `/api/emission` requests can return both JSON format as well as simple text. 
 {: .info}
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/emission
@@ -679,6 +691,8 @@ curl -XGET https://explorer.theqrl.org/api/emission
 	"emission":67091254.15686654
 }
 ```
+
+**Python Example**
 
 ```python
 def getEmission():
@@ -720,7 +734,9 @@ This request will also return text output by appending /text as shown below.
 | text | Emission Details in simple TEXT Response |
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/emission/text
@@ -729,6 +745,8 @@ curl -XGET https://explorer.theqrl.org/api/emission/text
 
 67091254.15686654
 ```
+
+**Python Example**
 
 ```python
 def getEmissionText():
@@ -775,7 +793,9 @@ Get the current reward amount.
 {: .info}
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/reward
@@ -788,6 +808,8 @@ curl -XGET https://explorer.theqrl.org/api/reward
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getReward():
@@ -828,7 +850,9 @@ This request will also return text output by appending /text as shown below.
 | text | Emission Details in simple TEXT Response |
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/reward/text
@@ -841,6 +865,8 @@ curl -XGET https://explorer.theqrl.org/api/reward/text
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getReward():
@@ -887,7 +913,9 @@ Get the current reward amount in shor.
 > **Info:** `/api/rewardshor` requests can return both JSON format as well as simple text. 
 {: .info}
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/rewardshor
@@ -900,6 +928,8 @@ curl -XGET https://explorer.theqrl.org/api/rewardshor
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getRewardShor():
@@ -942,7 +972,9 @@ This request will also return text output by appending /text as shown below.
 | text | rewardshor Details in simple TEXT Response |
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/rewardshor/text
@@ -955,6 +987,8 @@ curl -XGET https://explorer.theqrl.org/api/rewardshor/text
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getRewardShor():
@@ -1004,7 +1038,9 @@ Get the current Blockheight.
 {: .info}
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/blockheight
@@ -1017,6 +1053,8 @@ curl -XGET https://explorer.theqrl.org/api/blockheight
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getBlockheight():
@@ -1058,7 +1096,9 @@ This request will also return text output by appending /text as shown below.
 
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/blockheight/text
@@ -1068,6 +1108,8 @@ curl -XGET https://explorer.theqrl.org/api/blockheight/text
 319606
 
 ```
+
+**Python Example**
 
 ```python
 def getBlockheight():
@@ -1113,7 +1155,9 @@ Parse the response using json tools in a language of your choice.
 {: .info}
 
 
-```shell
+**cURL Example**
+
+```bash
 # Request
 
 curl -XGET https://explorer.theqrl.org/api/status
@@ -1121,28 +1165,28 @@ curl -XGET https://explorer.theqrl.org/api/status
 # Response
 
 {
-	"_id":"r7h7u3ynXc4XPHngw",
-	"node_info":
-	{
-		"version":"1.1.11 python",
-		"state":"SYNCED",
-		"num_connections":33,
-		"num_known_peers":22645,
-		"uptime":"1765885",
-		"block_height":"319612",
-		"block_last_hash":
-		{
-			"0":239,
-			"1":173,
-			"2":170,
-			"3":80,
-			"4":71,
-			"5":106,
-			"6":233,
-			"7":132,
-			"8":53,
-			"9":240,
-			"10":179,
+  "_id":"r7h7u3ynXc4XPHngw",
+  "node_info":
+  {
+     "version":"1.1.11 python",
+     "state":"SYNCED",
+     "num_connections":33,
+     "num_known_peers":22645,
+     "uptime":"1765885",
+     "block_height":"319612",
+     "block_last_hash":
+     {
+      "0":239,
+      "1":173,
+      "2":170,
+      "3":80,
+      "4":71,
+      "5":106,
+      "6":233,
+      "7":132,
+      "8":53,
+      "9":240,
+      "10":179,
       "11":60,
       "12":30,
       "13":139,
@@ -1224,6 +1268,8 @@ curl -XGET https://explorer.theqrl.org/api/status
 }
 
 ```
+
+**Python Example**
 
 ```python
 def getStatus():
