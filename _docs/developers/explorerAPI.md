@@ -64,6 +64,9 @@ Get any block details by block number.
 
 curl -XGET https://explorer.theqrl.org/api/block/34556
 
+```
+
+```json
 # Response
 curl -XGET https://explorer.theqrl.org/api/block/34556
 {
@@ -171,6 +174,9 @@ def getblockByNumber(block_number):
 
 getblockByNumber("34556")
 
+```
+
+```json
 # Response
 
 {
@@ -293,6 +299,9 @@ Parse the response using json tools in a language of your choice.
 
 curl -XGET https://explorer.theqrl.org/api/tx/c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b851a4c6
 
+```
+
+```json
 # Response
 {
   "result":"transaction",
@@ -399,6 +408,9 @@ def getTransactionByHash(tx_hash):
 getTransactionByHash("c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b851a4c6")
 
 
+```
+
+```json
 # Response
 
 {
@@ -520,6 +532,9 @@ Parse the response using json tools in a language of your choice.
 
 curl -XGET https://explorer.theqrl.org/api/a/Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc325ca36d86e
 
+```
+
+```json
 # Response
 {
   "state":
@@ -604,7 +619,9 @@ def getAddress(address):
 
 getAddress("Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc325ca36d86e")
 
+```
 
+```json
 # Response
 
 {
@@ -684,6 +701,9 @@ Get the total QRL emission to date.
 
 curl -XGET https://explorer.theqrl.org/api/emission
 
+```
+
+```json
 # Response
 
 {
@@ -707,6 +727,9 @@ def getEmission():
 
 getEmission()
 
+```
+
+```json
 # Response
 
 {
@@ -800,6 +823,9 @@ Get the current reward amount.
 
 curl -XGET https://explorer.theqrl.org/api/reward
 
+```
+
+```json
 # Response
 
 {
@@ -824,6 +850,9 @@ def getReward():
 
 getReward()
 
+```
+
+```json
 # Response
 
 {
@@ -857,6 +886,9 @@ This request will also return text output by appending /text as shown below.
 
 curl -XGET https://explorer.theqrl.org/api/reward/text
 
+```
+
+```json
 # Response
 
 {
@@ -881,6 +913,9 @@ def getReward():
 
 getReward()
 
+```
+
+```json
 # Response
 
 {
@@ -920,6 +955,9 @@ Get the current reward amount in shor.
 
 curl -XGET https://explorer.theqrl.org/api/rewardshor
 
+```
+
+```json
 # Response
 
 {
@@ -944,6 +982,9 @@ def getRewardShor():
 
 getRewardShor()
 
+```
+
+```json
 # Response
 
 {
@@ -979,6 +1020,9 @@ This request will also return text output by appending /text as shown below.
 
 curl -XGET https://explorer.theqrl.org/api/rewardshor/text
 
+```
+
+```json
 # Response
 
 {
@@ -1003,6 +1047,9 @@ def getRewardShor():
 
 getRewardShor()
 
+```
+
+```json
 # Response
 
 {
@@ -1045,6 +1092,9 @@ Get the current Blockheight.
 
 curl -XGET https://explorer.theqrl.org/api/blockheight
 
+```
+
+```json
 # Response
 
 {
@@ -1069,11 +1119,14 @@ def getBlockheight():
 
 getBlockheight()
 
+```
+
+```json
 # Response
 
 {
-   'blockheight': 319608, 
-   'found': True
+  'blockheight': 319608, 
+  'found': True
 }
 
 ```
@@ -1162,6 +1215,10 @@ Parse the response using json tools in a language of your choice.
 
 curl -XGET https://explorer.theqrl.org/api/status
 
+
+```
+
+```json
 # Response
 
 {
@@ -1261,12 +1318,10 @@ curl -XGET https://explorer.theqrl.org/api/status
       "30":0,
       "31":0
     },
-
-# Truncated Response for clarity
-
   }]
 }
 
+# Truncated Response for clarity
 ```
 
 **Python Example**
@@ -1285,6 +1340,9 @@ def getStatus():
 
 getStatus()
 
+```
+
+```json
 # Response
 
 {
