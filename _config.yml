@@ -41,16 +41,9 @@ kramdown:
 markdown: kramdown
 theme: minima
 
-whitelist: [jekyll-analytics]
 plugins:
-  - jekyll-analytics
   - jekyll-seo-tag
   - jekyll-sitemap
-
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-123414102-2      # Required - replace with your tracking id
-    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
 
 # SEO
 twitter:

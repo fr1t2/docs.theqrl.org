@@ -7,8 +7,10 @@
   {% assign pageclass = 'homepage' %}
   {% endif %}
   <body class="linux {{ pageclass }}">
-    
-    {% include googleAnalytics.html %}
+  
+{% if jekyll.environment == "production" %}
+     {% include googleAnalytics.html %}
+{% endif %}
 
 	<div class="overflow">
     {% include header.html %}
