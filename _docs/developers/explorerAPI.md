@@ -68,7 +68,6 @@ curl -XGET https://explorer.theqrl.org/api/block/34556
 
 ```json
 # Response
-curl -XGET https://explorer.theqrl.org/api/block/34556
 {
   "result":"block_extended",
   "found":true,
