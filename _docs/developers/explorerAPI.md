@@ -263,7 +263,7 @@ getblockByNumber("34556")
 
 
 
-### Transaction By Hash
+## Transaction By Hash
 
 
 Get data from a transaction by number
@@ -489,7 +489,7 @@ getTransactionByHash("c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b8
 }
 ```
 
-### Address By Number
+## Address By Number
 
 
 Get address data by number.
@@ -660,7 +660,7 @@ getAddress("Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc
 ```
 
 
-### Emission
+## Emission
 
 Get the total QRL emission to date.
 
@@ -772,7 +772,7 @@ getEmissionText()
 
 ```
 
-### Reward
+## Reward
 
 Get the current reward amount.
 
@@ -886,7 +886,7 @@ getRewardText()
 
 ```
 
-### RewardShor
+## RewardShor
 
 Get the current reward amount in shor.
 
@@ -1002,7 +1002,7 @@ getRewardShorText()
 
 
 
-### Blockheight
+## Blockheight
 
 
 Get the current Blockheight.
@@ -1120,7 +1120,7 @@ getBlockheightText()
 ```
 
 
-### Network Status
+## Network Status
 
 Get status of the blockchain including node details.
 
