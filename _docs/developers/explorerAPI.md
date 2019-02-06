@@ -1257,7 +1257,7 @@ curl -XGET https://explorer.theqrl.org/api/status
 }
 ```
 
-> Note: This response has been trunicated for clarity in documentation.
+> Note: This response has been trunicated for clarity in this documentation.
 
 
 
