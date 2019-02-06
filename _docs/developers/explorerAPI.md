@@ -67,7 +67,6 @@ curl -XGET https://explorer.theqrl.org/api/block/34556
 ```
 
 ```json
-# Response
 {
   "result":"block_extended",
   "found":true,
@@ -173,10 +172,7 @@ def getblockByNumber(block_number):
 
 getblockByNumber("34556")
 
-```
-
-```json
-# Response
+## Response
 
 {
   'found': True, 
@@ -301,7 +297,6 @@ curl -XGET https://explorer.theqrl.org/api/tx/c9656d989bce2000c794314b73882b0ebb
 ```
 
 ```json
-# Response
 {
   "result":"transaction",
   "found":true,
@@ -406,11 +401,7 @@ def getTransactionByHash(tx_hash):
 
 getTransactionByHash("c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b851a4c6")
 
-
-```
-
-```json
-# Response
+## Response
 
 {
   'result': 'transaction', 
@@ -498,10 +489,7 @@ getTransactionByHash("c9656d989bce2000c794314b73882b0ebb99fa1fe58e7a466a8a64e7b8
 }
 ```
 
-
-
 ### Address By Number
-
 
 
 Get address data by number.
@@ -534,7 +522,6 @@ curl -XGET https://explorer.theqrl.org/api/a/Q01040007a591a62c23ed27adfe3df8eb81
 ```
 
 ```json
-# Response
 {
   "state":
   {
@@ -563,7 +550,9 @@ curl -XGET https://explorer.theqrl.org/api/a/Q01040007a591a62c23ed27adfe3df8eb81
       "data":[0]
     },
 
-## TRUNICATED FOR CLARITY ##
+
+{"TRUNICATED FOR CLARITY":""},
+
 
     {
       "type":"Buffer",
@@ -618,10 +607,7 @@ def getAddress(address):
 
 getAddress("Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc325ca36d86e")
 
-```
-
-```json
-# Response
+## Response
 
 {
   'ots': 
@@ -654,7 +640,8 @@ getAddress("Q01040007a591a62c23ed27adfe3df8eb812ee5e4b73e47fb8471e8d78ecd9b4cadc
       'type': 'Buffer'
     }, 
 
-## TRUNICATED FOR CLARITY ##
+{"TRUNICATED FOR CLARITY":""},
+
     {
       'data': [0], 
       'type': 'Buffer'
@@ -703,7 +690,6 @@ curl -XGET https://explorer.theqrl.org/api/emission
 ```
 
 ```json
-# Response
 
 {
 	"found":true,
@@ -726,10 +712,7 @@ def getEmission():
 
 getEmission()
 
-```
-
-```json
-# Response
+## Response
 
 {
    'emission': 67091254.15686654, 
@@ -789,10 +772,6 @@ getEmissionText()
 
 ```
 
-
-
-
-
 ### Reward
 
 Get the current reward amount.
@@ -825,7 +804,6 @@ curl -XGET https://explorer.theqrl.org/api/reward
 ```
 
 ```json
-# Response
 
 {
 	"found":true,
@@ -849,10 +827,7 @@ def getReward():
 
 getReward()
 
-```
-
-```json
-# Response
+## Response
 
 {
 	'reward': 6.311586903, 
@@ -885,47 +860,31 @@ This request will also return text output by appending /text as shown below.
 
 curl -XGET https://explorer.theqrl.org/api/reward/text
 
-```
+## Response
 
-```json
-# Response
-
-{
-  "found":true,
-  "reward":6.311586903
-}
+6.311586903
 
 ```
 
 **Python Example**
 
 ```python
-def getReward():
+def getRewardText():
   import requests
   import json
   request = requests.get("https://explorer.theqrl.org/api/reward/text")
   response = request.text
-  getRewardResp = json.loads(response)
-  jsonResponse = getRewardResp
+  getRewardTextResp = json.loads(response)
+  jsonResponse = getRewardTextResp
   return(jsonResponse)
 
 
-getReward()
+getRewardText()
+
+
+6.311586903
 
 ```
-
-```json
-# Response
-
-{
-  'reward': 6.311586903, 
-  'found': True
-}
-
-```
-
-
-
 
 ### RewardShor
 
@@ -957,7 +916,6 @@ curl -XGET https://explorer.theqrl.org/api/rewardshor
 ```
 
 ```json
-# Response
 
 {
   "found":true,
@@ -981,10 +939,7 @@ def getRewardShor():
 
 getRewardShor()
 
-```
-
-```json
-# Response
+## Response
 
 {
    'reward': 6311582702, 
@@ -1019,43 +974,29 @@ This request will also return text output by appending /text as shown below.
 
 curl -XGET https://explorer.theqrl.org/api/rewardshor/text
 
-```
+## Response
 
-```json
-# Response
-
-{
-  "found":true,
-  "reward":6311582702
-}
+6311582702
 
 ```
 
 **Python Example**
 
 ```python
-def getRewardShor():
+def getRewardShorText():
   import requests
   import json
   request = requests.get("https://explorer.theqrl.org/api/rewardshor/text")
   response = request.text
-  getRewardShorResp = json.loads(response)
-  jsonResponse = getRewardShorResp
+  getRewardShorTextResp = json.loads(response)
+  jsonResponse = getRewardShorTextResp
   return(jsonResponse)
 
 
-getRewardShor()
+getRewardShorText()
 
-```
 
-```json
-# Response
-
-{
-   'reward': 6311582702, 
-   'found': True
-}
-
+6311582702
 
 ```
 
@@ -1094,7 +1035,6 @@ curl -XGET https://explorer.theqrl.org/api/blockheight
 ```
 
 ```json
-# Response
 
 {
 	"found":true,
@@ -1118,10 +1058,7 @@ def getBlockheight():
 
 getBlockheight()
 
-```
-
-```json
-# Response
+## Response
 
 {
   'blockheight': 319608, 
@@ -1164,17 +1101,17 @@ curl -XGET https://explorer.theqrl.org/api/blockheight/text
 **Python Example**
 
 ```python
-def getBlockheight():
+def getBlockheightText():
   import requests
   import json
   request = requests.get("https://explorer.theqrl.org/api/blockheight/text")
   response = request.text
-  getBlockheightResp = json.loads(response)
-  jsonResponse = getBlockheightResp
+  getBlockheightTextResp = json.loads(response)
+  jsonResponse = getBlockheightTextResp
   return(jsonResponse)
 
 
-getBlockheight()
+getBlockheightText()
 
 # Response
 
@@ -1218,7 +1155,6 @@ curl -XGET https://explorer.theqrl.org/api/status
 ```
 
 ```json
-# Response
 
 {
   "_id":"r7h7u3ynXc4XPHngw",
@@ -1319,9 +1255,11 @@ curl -XGET https://explorer.theqrl.org/api/status
     },
   }]
 }
-
-# Truncated Response for clarity
 ```
+
+> Note: This response has been trunicated for clarity in documentation.
+
+
 
 **Python Example**
 
@@ -1342,7 +1280,6 @@ getStatus()
 ```
 
 ```json
-# Response
 
 {
     "_id": "MHE7CqGAGyQ56ZjMo",
@@ -1427,7 +1364,7 @@ getStatus()
             "timestamp": "1548979234"
         },
 
-# ~ Truncated for clarity ~
+{"TRUNICATED FOR CLARITY":""},
         
         {
             "difficulty": "2336533837",
