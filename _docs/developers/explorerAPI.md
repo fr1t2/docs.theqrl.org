@@ -35,7 +35,7 @@ Far an easy to read output use a browser add-on like Chrome's [jsonview](https:/
 
 
 
-### Block By Number
+## Block By Number
 
 
 Get any block details by block number. 
