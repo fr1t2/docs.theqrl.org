@@ -7,17 +7,18 @@ tags: tools
 
 
 
-![keybase.io logo](/assets/tools/Keybase_logo.png)
 
 We’re big fans of what Keybase are doing here at the Quantum Resistant Ledger. Innovation and security are a big part of what we do and we are delighted to announce that you can add your QRL address to your Keybase identity.
 
+![keybase.io logo](/assets/tools/Keybase_logo.png)
+
 ## Keybase
 
-[Keybase](https://keybase.io) is a catalog of connected identities that utilises cryptographic Proofs to link profiles.
+[Keybase](https://keybase.io) is a catalog of connected identities that utilizes cryptographic Proofs to link profiles.
 
 
 
-## Adding QRL address to Keybase profile
+## Adding QRL address to Keybase
 
 To add your QRL address to your Keybase profile, in the Keybase app click on the *Add more identities* button, and enter your QRL address. When you click the *Authorize* button you’ll be presented with a page like this:
 
@@ -30,7 +31,7 @@ The easiest way to achieve this is using the new Keybase tools section of the QR
 
 ![Tools Icon in the wallet](/assets/tools/tools_icon.png)
 
-> Tools icon in the wallet sidebar
+Tools icon in the wallet sidebar
 
 
 ![tools bar](/assets/tools/tools_Bar.png)
@@ -51,3 +52,6 @@ Looking on the [Explorer](https://explorer.theqrl.org) you’ll see a record of 
 Once this is visible in the Explorer, you’re good to go back to the QRL/Keybase link page and click *Submit:*
 
 ![tools bar](/assets/tools/KeyBaseFinished.png)
+
+
+Congrats, you have now linked your QRL address to your [keybase.io](https://Keybase.io) profile cryptographically. 
