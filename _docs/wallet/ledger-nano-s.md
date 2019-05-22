@@ -41,7 +41,7 @@ To read more on the setup and configuration of the second account space see [thi
 
 
 > This feature is optional and there is no way to tell from the ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
-
+{: .info}
 
 ##### This guide will walk you through
 
@@ -252,7 +252,7 @@ In the event you lose your Ledger Nano S device, or simply need to initialise or
 10. Your Ledger Nano S device will show **WARNING Set XMSS Index New Value XX** where _XX_ is the XMSS Index you entered.
 11. Press the right button on your Ledger Nano S to confirm, or left button to reject the update.
 
-![QRL Ledger Transaction Complete](/assets/wallet/web/ledger-nano-s/toolsTab.png)
+![QRL Ledger Transaction Complete](/assets/wallet/web/ledger-nano-s/ToolsTab.png)
 
 
 ## QRL Ledger Nano S Video Demonstration
