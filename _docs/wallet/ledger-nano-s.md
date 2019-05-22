@@ -133,6 +133,8 @@ This will present you with the opened QRL wallet ready to send or receive as see
 
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
+> **Note** Ubuntu users may run into issues connecting to their ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from ledger explaining the issue and solution.
+
 ## Receive QRL
 
 You should **always** verify the address shown in the [QRL Web Wallet](https://wallet.theqrl.org/) matches the address shown on your Ledger Nano S device. To confirm your address, click the **Click to Verify** button on the receive tab of the wallet. 
