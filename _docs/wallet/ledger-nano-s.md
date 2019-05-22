@@ -120,6 +120,8 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 
 ![Open QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/openWallet.png)
 
+THis will present you with the opened QRL wallet ready to send or receive as seen below.
+
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
 ## Receive QRL
