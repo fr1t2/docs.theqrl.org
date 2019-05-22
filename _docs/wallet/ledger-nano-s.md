@@ -1,15 +1,68 @@
 ---
-title: Ledger Nano S Usage
+title: Ledger Nano S
 categories: wallet
 description: The QRL Ledger Nano-S Wallet documentation
 tags: [wallet, ledger, nano]
 ---
 
+# TODO - 
+* Write up new sections
+* Add explainer to plausible deniability 
+* Send transaction... wtf
+
+
+
+PD Wallet 1 Q00040059a48b128a59681d18303ff42b9395fe65ef97659044abab752f53d1b37adc949d7be849
+PD Wallet 2 Q00040039f390043c5445edefe8abd3e963cfab389ef5e2c9c6fc00b4ca96c21b30e5bec78eba7f
+
+
+Wallet 1 Q00040043096f536b68eb366425fec3c74414b9a9d345368e7554923b67cbbcaafe577d33e78f3c
+wallet 2 Q000400c722c2198837153a6979ff3ddcc385fd9956e9a49ce8696829e2a2f38a5ee40365da6ee2
+
+
+The QRL development team has added some new features with the latest release we are very excited about. 
+
+* Support for Nano S and Nano X
+* Multi-Tree support
+* Plausible Deniability 
+
+
+The QRL developers have worked to trim bits and bytes to get the XMSS trees to fit on the ledger. After the latest optimizations in the latest firmware one can now load multiple trees and store more than one wallet on the Ledger nano-s. 
+
+
+
+### Multi-Tree Support
+
+This new feature adds the ability to store multiple XMSS trees on your Ledger Nano. Each tree is limited still to 256 keys to user for transactions. 
+
+![MultiTree Support](/assets/ledger/keyspace.png)
+
+This feature will allow you to store 2 QRL addresses with 256 available transactions each on your ledger. When you reach the end of your first address OTS key pool, you have the opportunity to send all funds to the second address and continue using the ledger. Once both trees have been consumed you will have to transfer funds away, and re-initialize the ledger to generate new keys. But don't worry too much, the wallet will warn you when your keys are running out. 
+
+
+### Plausible Deniability
+
+One of the most exciting features to roll out with this latest release is the ability to secure your funds from the $5 wrench attack. This new feature creates a secondary passphrase to open your ledger device with. 
+
+This second account space allows another 2 QRL XMSS trees (Addresses) to be created on the Ledger. To access the new account space on your ledger you will enter the new passphrase you setup when you first power up the ledger. 
+
+This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. THe first being the typical 24 word ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
+
+
+![MultiTree Support](/assets/ledger/keyspace2.png)
+
+
+To read more on the setup and configuration of the second account space see [this article from the Ledger team](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security)
+
+
+> This feature is optional and there is no way to tell from the ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
+
+
 ##### This guide will walk you through
 
-* Installing the QRL App on your Ledger Nano S
-* Initialising the QRL App after installation on your Ledger Nano S
-* Accessing your QRL Wallet with the Ledger Nano S
+* Installing the QRL App
+* Initializing XMSS trees in the QRL App 
+* Accessing your QRL Wallets with the Ledger Nano S
 * Receiving a transaction over the network - *(Receive QRL)*
 * Sending a transaction over the network - *(Send QRL)*
 * Checking transaction details on the QRL Explorer, including your current wallet balance
@@ -19,21 +72,22 @@ Being Quantum Resistant comes with some inherent challenges. Before using the QR
  
 ### OTS Key Index
 
-When you create a new wallet you create an XMSS tree, which is comprised of many one time use signatures. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. 
+When you create a new wallet you create an XMSS tree, which is comprised of many one time use signatures. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. The ledger will now hold 2 XMSS trees (QRL Addresses) in it's memory space. 
 
 **The OTS key index is limited.** 
 
-You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. This cannot be stressed enough! 
+You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. ~~This cannot be stressed enough!~~
 
-> **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER**
 {: .info}
 
-The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address.
+Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose the device and need to reinstall on a new device, you will have to reset your XMSS index inside the [QRL Web Wallet](https://wallet.theqrl.org/). You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
+
+> **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER** (Don't worry, there are plenty of warnings along the way.) The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
 
 ### Ledger Nano S Specific Quirks
+
 * Track all OTS Keys used in a spreadsheet
-> **NOTE** Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose the device and need to reinstall on a new device, you will have to reset your XMSS index inside the [QRL Web Wallet](https://wallet.theqrl.org/). You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
-* Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible
+* Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 * Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. A future release of the QRL Ledger Nano S app will support token creation, sending and slave transaction functionality.
 
 ## Installing the QRL Ledger Nano S Application
@@ -49,16 +103,23 @@ Using the [Ledger Live](https://www.ledger.com/pages/ledger-live) application, f
 
 ## Initialising the QRL App
 
-Before you can use the QRL Ledger Nano S App, it must first be initialised. The initialisation process will generate an XMSS tree on your Ledger Nano S device, which is a unique aspect of the QRL Network's signature scheme. This process only has to be completed once on your Ledger Nano S device. Please allow up to 45 minutes for this process to complete.
+Before you can use the QRL Ledger Nano S App, it must first be initialised. The initialisation process will generate an XMSS tree on your Ledger Nano S device, which is a unique aspect of the QRL Network's signature scheme. This process only has to be completed once on your Ledger Nano S device. Please allow up to 45 minutes for this process to complete for each tree. 
 
 To initialise your Ledger Nano S device for use with the QRL App, follow these instructions:
 
 1. Make sure your Ledger Nano S device is powered on and unlocked.
 2. Open the **QRL** app on your Ledger Nano S
-3. Your Ledger Nano S device will show **QRL not ready**. Scroll down and press both buttons on the **Init Device** menu option.
-4. Your Ledger Nano S device will show **keygen: 001/256**. This will slowly progress until all 256 keys have been generated.
-5. When this process has completed, your Ledger Nano S device will show **QRL READY rem:256** - indicating your device is ready, and you have 256 OTS Keys remaining.
-6. Your Ledger Nano S device has been initialised for the QRL app.
+3. Your Ledger Nano S device will show **QRL (Tree 1) not ready**. Scroll down and press both buttons on the **Init Device** menu option.
+4. Your Ledger Nano S device will show **QRL (Tree 1) keygen: 001/256**. This will slowly progress until all 256 keys have been generated.
+5. When this process has completed, your Ledger Nano S device will show **QRL (Tree 1) READY rem:256** - indicating your device has finished generating tree 1 OTS keys, and you have 256 OTS Keys remaining in this Tree.
+6. Scroll down in the menu and chose **Switch Tree** with both buttons. You will now see **QRL (Tree 2) Not Ready**
+7. Initialize Tree 2 following the same steps above. Again this process will take about 45 minuets to complete.
+8. Your Ledger Nano S device has been initialised for the QRL app, and contains 2 addresses (XMSS Trees) ready to deposit funds to.
+
+
+
+![Initializing Tree 1](/assets/ledger/init.gif)
+
 
 ## Accessing your QRL Wallet with the Ledger Nano S
 
