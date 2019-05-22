@@ -107,8 +107,8 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 
 | QRL_Tree | OTS_Keys | Address |
 |-----|--|:--| 
-| QRL (Tree 1) | 256 OTS | Q00040043096f536b68eb366425fec3c74414b9a9d345368e7554923b67cbbcaafe577d33e78f3c |
-| QRL (Tree 2) | 256 OTS | Q000400c722c2198837153a6979ff3ddcc385fd9956e9a49ce8696829e2a2f38a5ee40365da6ee2 |
+| QRL(Tree 1) | 256 OTS | Q00040043096f536b68eb366425fec3c74414b9a9d345368e7554923b67cbbcaafe577d33e78f3c |
+| QRL(Tree 2) | 256 OTS | Q000400c722c2198837153a6979ff3ddcc385fd9956e9a49ce8696829e2a2f38a5ee40365da6ee2 |
 
 
 
