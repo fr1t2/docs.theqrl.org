@@ -20,7 +20,7 @@ The QRL developers have worked to trim bits and bytes to get the XMSS trees to f
 
 This new feature adds the ability to store multiple XMSS trees on your Ledger Nano. Each tree is limited still to 256 keys to user for transactions. 
 
-![MultiTree Support](/assets/ledger/keyspace.png)
+![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace.png)
 
 This feature will allow you to store 2 QRL addresses with 256 available transactions each on your ledger. When you reach the end of your first address OTS key pool, you have the opportunity to send all funds to the second address and continue using the ledger. Once both trees have been consumed you will have to transfer funds away, and re-initialize the ledger to generate new keys. But don't worry too much, the wallet will warn you when your keys are running out. 
 
@@ -34,7 +34,7 @@ This second account space allows another 2 QRL XMSS trees (Addresses) to be crea
 This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. THe first being the typical 24 word ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
 
 
-![MultiTree Support](/assets/ledger/keyspace2.png)
+![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace2.png)
 
 
 To read more on the setup and configuration of the second account space see [this article from the Ledger team](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security)
@@ -103,7 +103,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 
 
 
-![Initializing Tree 1](/assets/ledger/init.gif)
+![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init.gif)
 
 
 ## Accessing your QRL Wallet with the Ledger Nano S
