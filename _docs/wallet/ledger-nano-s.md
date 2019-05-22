@@ -112,13 +112,7 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 
 
 
-## Accessing your QRL Wallet with the Ledger Nano S
-
-> **NOTE** If you are a Firefox user, ensure you have enabled **u2f** before proceeding. [Enabling U2F support in Mozilla Firefox](https://support.yubico.com/support/solutions/articles/15000017511-enabling-u2f-support-in-mozilla-firefox)
-{: .info}
-
-> **NOTE** Chrome Users, there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
-{: .info}
+## Accessing QRL Wallet with the Ledger Nano S
 
 1. Make sure your Ledger Nano S device is powered on, unlocked and the QRL App is open.
 2. Select the tree to open by scrolling to **Switch Tree** in the QRL menu.
@@ -134,8 +128,15 @@ This will present you with the opened QRL wallet ready to send or receive as see
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
 > **Note** Ubuntu users may run into issues connecting to their ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from ledger explaining the issue and solution.
+{: .info}
 
-## Receive QRL
+> **NOTE** Chrome Users, there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
+{: .info}
+
+> **NOTE** If you are a Firefox user, ensure you have enabled **u2f** before proceeding. [Enabling U2F support in Mozilla Firefox](https://support.yubico.com/support/solutions/articles/15000017511-enabling-u2f-support-in-mozilla-firefox)
+{: .info}
+
+### Receive QRL
 
 You should **always** verify the address shown in the [QRL Web Wallet](https://wallet.theqrl.org/) matches the address shown on your Ledger Nano S device. To confirm your address, click the **Click to Verify** button on the receive tab of the wallet. 
 
@@ -154,7 +155,7 @@ Once you've confirmed your address on both devices, you can send your QRL addres
 
 ![QRL Receive](/assets/wallet/web/ledger-nano-s/receive.png)
 
-## Send QRL
+### Send QRL
 
 With the wallet unlocked, you can now send QRL.
 
@@ -204,7 +205,7 @@ When the transaction is confirmed in the network, your Transaction History will 
 ![QRL Ledger Transaction Complete](/assets/wallet/web/ledger-nano-s/ledger-txn-complete.png)
 
 
-## Check Wallet Balance
+### Check Wallet Balance
 
 With the wallet opened you can see the balance in the main screen of the web wallet. You can also check your wallet balance without opening the wallet by browsing to the [QRL Explorer](https://explorer.theqrl.org) and entering your address into the search field.
 
@@ -212,7 +213,7 @@ With the wallet opened you can see the balance in the main screen of the web wal
 
 You will see all of the transactions the address has as well as the balance of quanta and any tokens held by the wallet.
 
-## Manually Set the XMSS Index on your Ledger Nano S device
+### Manually Set the XMSS Index on your Ledger Nano S device
 
 In the event you lose your Ledger Nano S device, or simply need to initialise or maintain the state of a second Ledger Nano S device, you can manually set the XMSS Index state on your Ledger Nano S device.
 
