@@ -103,7 +103,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 
 
 
-![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif)
+> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating a tree on the ledger.
 
 
 ## Accessing your QRL Wallet with the Ledger Nano S
