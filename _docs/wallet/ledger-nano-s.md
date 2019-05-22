@@ -207,7 +207,7 @@ On your Ledger Nano S device, you can press **View transaction** to verify the F
 When you've confirmed these details, proceed to press **Sign transaction**.
 
 
-![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/sign.gif)
+![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/send.gif)
 
 
 Signing will take a few seconds. When complete, you will see the following back on the QRL Wallet.
