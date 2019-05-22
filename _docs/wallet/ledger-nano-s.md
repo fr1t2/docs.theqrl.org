@@ -99,16 +99,19 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 5. When this process has completed, your Ledger Nano S device will show **QRL (Tree 1) READY rem:256** - indicating your device has finished generating tree 1 OTS keys, and you have 256 OTS Keys remaining in this Tree.
 6. Scroll down in the menu and chose **Switch Tree** with both buttons. You will now see **QRL (Tree 2) Not Ready**
 7. Initialize Tree 2 following the same steps above. Again this process will take about 45 minuets to complete.
+
+> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating XMSS Tree 1 on the ledger. This will take a while, have patience.
+
 8. Your Ledger Nano S device has been initialised for the QRL app, and contains 2 addresses (XMSS Trees) ready to deposit funds to.
 
 
 
-> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating XMSS Tree 1 on the ledger.
 
 
 ## Accessing your QRL Wallet with the Ledger Nano S
 
 > **NOTE** If you are a Firefox user, ensure you have enabled **u2f** before proceeding. [Enabling U2F support in Mozilla Firefox](https://support.yubico.com/support/solutions/articles/15000017511-enabling-u2f-support-in-mozilla-firefox)
+**Chrome Users** Please note there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
 {: .info}
 
 1. Make sure your Ledger Nano S device is powered on, unlocked and the QRL App is open.
@@ -138,7 +141,7 @@ Your QRL address will appear on your computer, and on your Ledger Nano S device.
 
 Once you've confirmed your address on both devices, you can send your QRL address to whomever you are receiving coins from.
 
-> **NOTE** In the event you find the addresses do not match, you should immediately reach out to the QRL Team to report the issue. This could occur in the event a malicious actor has taken control of the QRL Web Wallet.
+> **NOTE** In the event you find the addresses do not match, you should immediately reach out to the QRL Team to report the issue - [security@theqrl.org](mailto://security@theqrl.org) This could occur in the event a malicious actor has taken control of the QRL Web Wallet. 
 {: .info}
 
 ![QRL Receive](/assets/wallet/web/ledger-nano-s/receive.png)
@@ -158,7 +161,7 @@ To send QRL there are four fields you need to fill in:
 | **Fee** | How much you are paying to make this transaction |
 | **OTS Key Index** | Enter an unused OTS Key |
 
-Make sure everything is correct and click the confirm button. You will another confirmation of your transaction details.
+Make sure everything is correct and click the confirm button. You will get another confirmation of your transaction details.
 
 ![QRL Confirm Transaction](/assets/wallet/web/ledger-nano-s/confirm-txn.png)
 
@@ -166,21 +169,19 @@ If you are happy with the transaction details, click the **Sign with Ledger** Bu
 
 A window will appear prompting you to confirm the transaction details on your Ledger Nano S device.
 
-![QRL Ledger Nano Confirm Transaction](/assets/wallet/web/ledger-nano-s/ledger-confirm-txn.png)
+![QRL Ledger Nano Confirm Transaction](/assets/wallet/web/ledger-nano-s/SendQuanta.png)
 
 On your Ledger Nano S device, you can press **View transaction** to verify the From and To addresses, Amount(s) and Fee.
 
-![QRL Ledger Nano View Transaction](/assets/wallet/web/ledger-nano-s/ledger-nano-view-txn.png)
+![QRL Ledger Nano View Transaction](/assets/wallet/web/ledger-nano-s/sendQuantaSigned.png)
 
 When you've confirmed these details, proceed to press **Sign transaction**.
 
-![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/ledger-nano-sign-txn.png)
 
-Your Ledger Nano S device will now display **SIGNING**
+![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/sign.gif)
 
-![QRL Ledger Nano Signing](/assets/wallet/web/ledger-nano-s/ledger-nano-signing.png)
 
-Signing will take a few seconds to complete. When complete, you will see the following back on the QRL Wallet.
+Signing will take a few seconds. When complete, you will see the following back on the QRL Wallet.
 
 ![QRL Ledger Send Transaction](/assets/wallet/web/ledger-nano-s/ledger-send-txn.png)
 
@@ -221,6 +222,9 @@ In the event you lose your Ledger Nano S device, or simply need to initialise or
 9. Click **Save New XMSS Index**. A confirmation window will appear, and your Ledger Nano S will ask you for confirmation.
 10. Your Ledger Nano S device will show **WARNING Set XMSS Index New Value XX** where _XX_ is the XMSS Index you entered.
 11. Press the right button on your Ledger Nano S to confirm, or left button to reject the update.
+
+![QRL Ledger Transaction Complete](/assets/wallet/web/ledger-nano-s/toolsTab.png)
+
 
 ## QRL Ledger Nano S Video Demonstration
 
