@@ -69,13 +69,13 @@ Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose
 
 > **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER** (Don't worry, there are plenty of warnings along the way.) The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
 
-### Ledger Nano S Specific Quirks
+### Ledger Nano S Quirks
 
 * Track all OTS Keys used in a spreadsheet
 * Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 * Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. A future release of the QRL Ledger Nano S app will support token creation, sending and slave transaction functionality.
 
-## Installing the QRL Ledger Nano S Application
+## Installing the QRL Application
 
 Using the [Ledger Live](https://www.ledger.com/pages/ledger-live) application, follow these instructions:
 
@@ -112,7 +112,7 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 
 
 
-## Accessing QRL Wallet with the Ledger Nano S
+## Accessing Wallet with Ledger
 
 1. Make sure your Ledger Nano S device is powered on, unlocked and the QRL App is open.
 2. Select the tree to open by scrolling to **Switch Tree** in the QRL menu.
@@ -213,7 +213,7 @@ With the wallet opened you can see the balance in the main screen of the web wal
 
 You will see all of the transactions the address has as well as the balance of quanta and any tokens held by the wallet.
 
-### Manually Set the XMSS Index on your Ledger Nano S device
+### Manually Set XMSS Index
 
 In the event you lose your Ledger Nano S device, or simply need to initialise or maintain the state of a second Ledger Nano S device, you can manually set the XMSS Index state on your Ledger Nano S device.
 
