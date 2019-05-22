@@ -61,7 +61,7 @@ When you create a new wallet you create an XMSS tree, which is comprised of many
 
 **The OTS key index is limited.** 
 
-You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. ~~This cannot be stressed enough!~~
+You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. ~This cannot be stressed enough!~
 
 {: .info}
 
@@ -103,7 +103,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 
 
 
-> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating a tree on the ledger.
+> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating XMSS Tree 1 on the ledger.
 
 
 ## Accessing your QRL Wallet with the Ledger Nano S
@@ -112,18 +112,27 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 {: .info}
 
 1. Make sure your Ledger Nano S device is powered on, unlocked and the QRL App is open.
-2. Visit [https://wallet.theqrl.org/](https://wallet.theqrl.org/) in your browser.
-3. Click **Open Wallet** on the left hand menu.
-4. On the right hand side, select **Ledger Nano S** in the drop down menu.
-5. Click the **Open Ledger Nano S** button.
+2. Select the tree you wish to open by scrolling to **Switch Tree** in the QRL menu and selecting with both buttons
+3. Visit [https://wallet.theqrl.org/](https://wallet.theqrl.org/) in your browser.
+4. Click **Open Wallet** on the left hand menu.
+5. On the right hand side, select **Ledger Nano S** in the drop down menu.
+6. Click the **Open Ledger Nano S** button.
 
-![Open QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/open.png)
+![Open QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/openWallet.png)
 
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
 ## Receive QRL
 
-You should **always** verify the address shown in the [QRL Web Wallet](https://wallet.theqrl.org/) matches the address shown on your Ledger Nano S device. To confirm your address, click the **Click to Verify** button on the receive tab of the wallet. Your QRL address will appear on your computer, and on your Ledger Nano S device.
+You should **always** verify the address shown in the [QRL Web Wallet](https://wallet.theqrl.org/) matches the address shown on your Ledger Nano S device. To confirm your address, click the **Click to Verify** button on the receive tab of the wallet. 
+
+
+![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/AddressVerification.png)
+
+Your QRL address will appear on your computer, and on your Ledger Nano S device.
+
+![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/verify1-crop.gif)
+
 
 Once you've confirmed your address on both devices, you can send your QRL address to whomever you are receiving coins from.
 
