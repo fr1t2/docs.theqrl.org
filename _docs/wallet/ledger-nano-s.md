@@ -20,7 +20,7 @@ The QRL developers have worked to trim bits and bytes to get the XMSS trees to f
 
 This new feature adds the ability to store multiple XMSS trees on your Ledger Nano. Each tree is limited still to 256 keys to user for transactions. 
 
-![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace.png)
+![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace-small.png)
 
 This feature will allow you to store 2 QRL addresses with 256 available transactions each on your ledger. When you reach the end of your first address OTS key pool, you have the opportunity to send all funds to the second address and continue using the ledger. Once both trees have been consumed you will have to transfer funds away, and re-initialize the ledger to generate new keys. But don't worry too much, the wallet will warn you when your keys are running out. 
 
