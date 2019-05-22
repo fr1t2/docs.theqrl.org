@@ -106,7 +106,7 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 
 
 | QRL Tree | OTS Keys | Address |
-|-----|--|--| 
+|-----|-----|-----| 
 | Tree 1 | 256 OTS | Q00040043096f536b68eb36ec3~~fe577d33e78f3c |
 | Tree 2 | 256 OTS | Q000400c722c2198837153a697~~5ee40365da6ee2 |
 
@@ -115,11 +115,13 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 ## Accessing your QRL Wallet with the Ledger Nano S
 
 > **NOTE** If you are a Firefox user, ensure you have enabled **u2f** before proceeding. [Enabling U2F support in Mozilla Firefox](https://support.yubico.com/support/solutions/articles/15000017511-enabling-u2f-support-in-mozilla-firefox)
-**Chrome Users** Please note there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
+{: .info}
+
+> **NOTE** Chrome Users, there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
 {: .info}
 
 1. Make sure your Ledger Nano S device is powered on, unlocked and the QRL App is open.
-2. Select the tree you wish to open by scrolling to **Switch Tree** in the QRL menu and selecting with both buttons
+2. Select the tree to open by scrolling to **Switch Tree** in the QRL menu.
 3. Visit [https://wallet.theqrl.org/](https://wallet.theqrl.org/) in your browser.
 4. Click **Open Wallet** on the left hand menu.
 5. On the right hand side, select **Ledger Nano S** in the drop down menu.
@@ -127,7 +129,7 @@ Your Ledger Nano S device has been initialised for the QRL app, and contains 2 a
 
 ![Open QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/openWallet.png)
 
-THis will present you with the opened QRL wallet ready to send or receive as seen below.
+This will present you with the opened QRL wallet ready to send or receive as seen below.
 
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
