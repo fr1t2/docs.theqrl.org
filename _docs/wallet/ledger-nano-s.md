@@ -5,21 +5,6 @@ description: The QRL Ledger Nano-S Wallet documentation
 tags: [wallet, ledger, nano]
 ---
 
-# TODO - 
-* Write up new sections
-* Add explainer to plausible deniability 
-* Send transaction... wtf
-
-
-
-PD Wallet 1 Q00040059a48b128a59681d18303ff42b9395fe65ef97659044abab752f53d1b37adc949d7be849
-PD Wallet 2 Q00040039f390043c5445edefe8abd3e963cfab389ef5e2c9c6fc00b4ca96c21b30e5bec78eba7f
-
-
-Wallet 1 Q00040043096f536b68eb366425fec3c74414b9a9d345368e7554923b67cbbcaafe577d33e78f3c
-wallet 2 Q000400c722c2198837153a6979ff3ddcc385fd9956e9a49ce8696829e2a2f38a5ee40365da6ee2
-
-
 The QRL development team has added some new features with the latest release we are very excited about. 
 
 * Support for Nano S and Nano X
