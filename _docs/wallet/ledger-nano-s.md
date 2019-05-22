@@ -71,9 +71,29 @@ Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose
 
 ### Ledger Nano S Quirks
 
-* Track all OTS Keys used in a spreadsheet
-* Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
-* Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. A future release of the QRL Ledger Nano S app will support token creation, sending and slave transaction functionality.
+
+**Private Keys**
+
+THe ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this so secure. 
+
+You will be presented with a private key to restore your ledger device. Any application secrets will be tied to this private key, and it is required to restore your wallet if ever needed.
+
+Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
+
+> With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. This can be 100 characters max case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. **If you forget it nobody will be able to help you.** You can think of it as an extra 25th word that you can choose.
+
+**OTS Key Tracking**
+
+It's recommended that you track all OTS Keys used in a spreadsheet or similar media. THe Nano S will keep track of your OTS keys for you, however if you ever lose the device and need to reinstall on a new device you will need to know which keys have been consumed.
+
+Once you have restored your wallet on a new Ledger you will need to manually set the XMSS OTS key index inside the [QRL Web Wallet](https://wallet.theqrl.org/) tools section. See below to [Manually Set XMSS Index](#manually-set-xmss-index)  
+
+> **NOTE**  You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
+
+**Tokens and Messages**
+Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. 
+
+A future release of the QRL Ledger Nano S app will support token creation, sending and slave transaction functionality. In the mean time you can setup another address [following our guide](/wallet/basics) and use this for all on chain tool uses.
 
 ## Installing the QRL Application
 
