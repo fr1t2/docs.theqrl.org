@@ -75,7 +75,7 @@ The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you
 ### Ledger Nano S Quirks
 
 
-**Private Keys**
+#### Private Keys
 
 The ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this so secure. 
 
@@ -86,9 +86,9 @@ Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner 
 > **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. 
 {: .info}
 
-This additional word can be up to 100 characters max, case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. **If you forget it nobody will be able to help you.** You can think of it as an extra 25th word that you can choose.
+This additional word can be up to 100 characters max, case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. If you forget it nobody will be able to help you. You can think of it as an extra 25th word that you can choose.
 
-**OTS Key Tracking**
+#### OTS Key Tracking
 
 It's recommended that you track all OTS Keys used in a spreadsheet or similar media. The Nano S will keep track of your OTS keys for you, however if you ever lose the device and need to reinstall on a new Ledger Nano S you will need to know which OTS keys have been consumed.
 
@@ -97,7 +97,7 @@ Once you have restored your wallet on a new Ledger, manually set the XMSS OTS ke
 > **NOTE**  You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
 {: .info}
 
-**Tokens and Messages**
+#### Tokens and Messages
 
 Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. 
 
