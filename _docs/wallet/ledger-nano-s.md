@@ -77,16 +77,17 @@ The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you
 
 #### Private Keys
 
-The ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this so secure. 
+The ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this device so secure. 
 
 You will be presented with a private key to restore your ledger device during the initial setup. Any application secrets will be tied to this private key, and it is required to restore your wallet if ever needed.
 
 Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 
-> **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. **Keep Your Keys Safe!**
+
+> **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. **Keep Your Keys Safe!** This additional word can be up to 100 characters max and is case sensitive. THis additional word is needed as much as your 24 word mnemonic to be able to restore your funds. You can think of it as an extra 25th word that you can choose.
 {: .info}
 
-This additional word can be up to 100 characters max, case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. If you forget it nobody will be able to help you. You can think of it as an extra 25th word that you can choose.
+**If you forget or lose your keys, nobody will be able to help you.**
 
 #### OTS Key Tracking
 
