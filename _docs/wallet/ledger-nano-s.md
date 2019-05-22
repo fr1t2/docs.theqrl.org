@@ -31,7 +31,7 @@ One of the most exciting features to roll out with this latest release is the ab
 
 This second account space allows another 2 QRL XMSS trees (Addresses) to be created on the Ledger. To access the new account space on your ledger you will enter the new passphrase you setup when you first power up the ledger. 
 
-This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. THe first being the typical 24 word ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
+This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. The first being the typical 24 word ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
 
 
 ![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace2.png)
@@ -40,7 +40,7 @@ This will add an additional word to the 24 word mnemonic phrase, creating 2 word
 To read more on the setup and configuration of the second account space see [this article from the Ledger team](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security)
 
 
-> This feature is optional and there is no way to tell from the ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
+> **NOTE** This feature is optional and there is no way to tell from the ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
 {: .info}
 
 ##### This guide will walk you through
@@ -67,30 +67,38 @@ You can only use each key **ONCE**. When you've used your _last_ key, you will n
 
 Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose the device and need to reinstall on a new device, you will have to reset your XMSS index inside the [QRL Web Wallet](https://wallet.theqrl.org/). You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
 
-> **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER** (Don't worry, there are plenty of warnings along the way.) The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
+> **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER** (Don't worry, there are plenty of warnings along the way.) 
+{: .info}
+
+The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
 
 ### Ledger Nano S Quirks
 
 
 **Private Keys**
 
-THe ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this so secure. 
+The ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this so secure. 
 
 You will be presented with a private key to restore your ledger device. Any application secrets will be tied to this private key, and it is required to restore your wallet if ever needed.
 
 Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 
-> With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. This can be 100 characters max case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. **If you forget it nobody will be able to help you.** You can think of it as an extra 25th word that you can choose.
+> **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. 
+{: .info}
+
+This additional word can be up to 100 characters max, case sensitive and is needed as much as your 24 word mnemonic to be able to restore your funds. **If you forget it nobody will be able to help you.** You can think of it as an extra 25th word that you can choose.
 
 **OTS Key Tracking**
 
-It's recommended that you track all OTS Keys used in a spreadsheet or similar media. THe Nano S will keep track of your OTS keys for you, however if you ever lose the device and need to reinstall on a new device you will need to know which keys have been consumed.
+It's recommended that you track all OTS Keys used in a spreadsheet or similar media. The Nano S will keep track of your OTS keys for you, however if you ever lose the device and need to reinstall on a new Ledger Nano S you will need to know which OTS keys have been consumed.
 
-Once you have restored your wallet on a new Ledger you will need to manually set the XMSS OTS key index inside the [QRL Web Wallet](https://wallet.theqrl.org/) tools section. See below to [Manually Set XMSS Index](#manually-set-xmss-index)  
+Once you have restored your wallet on a new Ledger, manually set the XMSS OTS key index inside the [QRL Web Wallet](https://wallet.theqrl.org/) tools section. See below to [Manually Set XMSS Index](#manually-set-xmss-index)  
 
 > **NOTE**  You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
+{: .info}
 
 **Tokens and Messages**
+
 Currently the QRL Ledger Nano S app does not support the creation and sending of QR Tokens on the QRL Network. Only native Quanta (QRL) transfers and Message Transaction types and derivatives of are currently supported. 
 
 A future release of the QRL Ledger Nano S app will support token creation, sending and slave transaction functionality. In the mean time you can setup another address [following our guide](/wallet/basics) and use this for all on chain tool uses.
