@@ -27,7 +27,7 @@ This feature will allow you to store 2 QRL addresses with 256 available transact
 
 ### Plausible Deniability
 
-One of the most exciting features to roll out with this latest release is the ability to secure your funds from the $5 wrench attack. This new feature creates a secondary passphrase to open your ledger device with. 
+One of the most exciting features to roll out with this latest release is the ability to secure your funds from the *"$5 wrench attack"*. This new feature creates a secondary passphrase to open your ledger device with. 
 
 This second account space allows another 2 QRL XMSS trees (Addresses) to be created on the Ledger. To access the new account space on your ledger you will enter the new passphrase you setup when you first power up the ledger. 
 
@@ -103,7 +103,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 
 
 
-![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init.gif)
+![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif)
 
 
 ## Accessing your QRL Wallet with the Ledger Nano S
