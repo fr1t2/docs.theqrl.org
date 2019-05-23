@@ -84,7 +84,7 @@ You will be presented with a private key to restore your ledger device during th
 Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 
 
-> **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. **Keep Your Keys Safe!** This additional word can be up to 100 characters max and is case sensitive. THis additional word is needed as much as your 24 word mnemonic to be able to restore your funds. You can think of it as an extra 25th word that you can choose.
+> **NOTE** With the addition of plausible deniability there is an additional self-set mnemonic word that must be stored as well. This additional word can be up to 100 characters max and is case sensitive. This additional word is needed as much as your 24 word mnemonic to be able to restore your funds. You can think of it as an extra 25th word that you can choose. **Keep Your Keys Safe!**
 {: .info}
 
 **If you forget or lose your keys, nobody will be able to help you.**
@@ -156,7 +156,7 @@ This will present you with the opened QRL wallet ready to send or receive as see
 
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
-> **Note** Ubuntu users may run into issues connecting to their ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from ledger explaining the issue and solution.
+> **NOTE** Ubuntu users may run into issues connecting to their ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from ledger explaining the issue and solution.
 {: .info}
 
 > **NOTE** Chrome Users, there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
@@ -174,7 +174,7 @@ You should **always** verify the address shown in the [QRL Web Wallet](https://w
 
 Your QRL address will appear on your computer, and on your Ledger Nano S device.
 
-![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/verify.gif)
+![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/verify1.gif)
 
 
 Once you've confirmed your address on both devices, you can send your QRL address to whomever you are receiving coins from.
