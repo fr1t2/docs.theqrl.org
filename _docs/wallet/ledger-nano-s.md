@@ -129,7 +129,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 6. Scroll down in the menu and chose **Switch Tree** with both buttons. You will now see **QRL (Tree 2) Not Ready**
 7. Initialize Tree 2 following the same steps above. Again this process will take about 45 minuets to complete.
 
-> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop.gif) Generating XMSS Tree 1 on the ledger. This will take a while, have patience.
+> ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop1.gif) Generating XMSS Tree 1 on the ledger. This will take a while, have patience.
 
 Your Ledger Nano S device has been initialised for the QRL app, and contains 2 addresses (XMSS Trees) ready to deposit funds to. 2 addresses contain 256 OTS keys each which can be used to sign transactions on the QRL network.
 
@@ -216,7 +216,7 @@ On your Ledger Nano S device, you can press **View transaction** to verify the F
 When you've confirmed these details, proceed to press **Sign transaction**.
 
 
-![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/send.gif)
+![QRL Ledger Nano Sign Transaction](/assets/wallet/web/ledger-nano-s/send1.gif)
 
 
 Signing will take a few seconds. When complete, you will see the following back on the QRL Wallet.
