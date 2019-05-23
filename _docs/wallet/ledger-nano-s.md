@@ -174,7 +174,7 @@ You should **always** verify the address shown in the [QRL Web Wallet](https://w
 
 Your QRL address will appear on your computer, and on your Ledger Nano S device.
 
-![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/verify1.gif)
+![Address Verification Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/verify2.gif)
 
 
 Once you've confirmed your address on both devices, you can send your QRL address to whomever you are receiving coins from.
