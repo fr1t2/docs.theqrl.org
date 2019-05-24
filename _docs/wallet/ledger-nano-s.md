@@ -2,7 +2,7 @@
 title: Ledger Nano S
 categories: wallet
 description: The QRL Ledger Nano-S Wallet documentation
-tags: [wallet, ledger, nano]
+tags: [wallet, Ledger, nano]
 ---
 
 The QRL development team has added some new features with the latest release we are very excited about. 
@@ -12,7 +12,7 @@ The QRL development team has added some new features with the latest release we 
 * Plausible Deniability 
 
 
-The QRL developers have worked to trim bits and bytes to get the XMSS trees to fit on the ledger. After the latest optimizations in the latest firmware one can now load multiple trees and store more than one wallet on the Ledger nano-s. 
+The QRL developers have worked to trim bits and bytes to get the XMSS trees to fit on the Ledger. After the latest optimizations in the latest firmware one can now load multiple trees and store more than one wallet on the Ledger Nano S. 
 
 
 
@@ -22,16 +22,16 @@ This new feature adds the ability to store multiple XMSS trees on your Ledger Na
 
 ![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace-small.png)
 
-This feature will allow you to store 2 QRL addresses with 256 available transactions each on your ledger. When you reach the end of your first address OTS key pool, you have the opportunity to send all funds to the second address and continue using the ledger. Once both trees have been consumed you will have to transfer funds away, and re-initialize the ledger to generate new keys. But don't worry too much, the wallet will warn you when your keys are running out. 
+This feature will allow you to store 2 QRL addresses with 256 available transactions each on your Ledger. When you reach the end of your first address OTS key pool, you have the opportunity to send all funds to the second address and continue using the Ledger. Once both trees have been consumed you will have to transfer funds away, and re-initialize the Ledger to generate new keys. But don't worry too much, the wallet will warn you when your keys are running out. 
 
 
 ### Plausible Deniability
 
-One of the most exciting features to roll out with this latest release is the ability to secure your funds from the *"$5 wrench attack"*. This new feature creates a secondary passphrase to open your ledger device with. 
+One of the most exciting features to roll out with this latest release is the ability to secure your funds from the *"$5 wrench attack"*. This new feature creates a secondary passphrase to open your Ledger device with. 
 
-This second account space allows another 2 QRL XMSS trees (Addresses) to be created on the Ledger. To access the new account space on your ledger you will enter the new passphrase you setup when you first power up the ledger. 
+This second account space allows another 2 QRL XMSS trees (Addresses) to be created on the Ledger. To access the new account space on your Ledger you will enter the new passphrase you setup when you first power up the Ledger. 
 
-This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. The first being the typical 24 word ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
+This will add an additional word to the 24 word mnemonic phrase, creating 2 word lists. The first being the typical 24 word Ledger recovery key, the second being the same 24 word phrase plus the additional word setup during configuration.
 
 
 ![MultiTree Support](/assets/wallet/web/ledger-nano-s/keyspace2.png)
@@ -40,7 +40,7 @@ This will add an additional word to the 24 word mnemonic phrase, creating 2 word
 To read more on the setup and configuration of the second account space see [this article from the Ledger team](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security)
 
 
-> **NOTE** This feature is optional and there is no way to tell from the ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
+> **NOTE** This feature is optional and there is no way to tell from the Ledger if you have configured this extra space. Plausibly deniable and fully recoverable secure funds!
 {: .info}
 
 ##### This guide will walk you through
@@ -57,7 +57,7 @@ Being Quantum Resistant comes with some inherent challenges. Before using the QR
  
 ### OTS Key Index
 
-When you create a new wallet you create an XMSS tree, which is comprised of many one time use signatures. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. The ledger will now hold 2 XMSS trees (QRL Addresses) in it's memory space. 
+When you create a new wallet you create an XMSS tree, which is comprised of many one time use signatures. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. The Ledger will now hold 2 XMSS trees (QRL Addresses) in it's memory space. 
 
 **The OTS key index is limited.** 
 
@@ -77,9 +77,9 @@ The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you
 
 #### Private Keys
 
-The ledger will not print your *QRL* private key. This is stored on the ledgers secure element, and the basis of what makes this device so secure. 
+The Ledger will not print your *QRL* private key. This is stored on the Ledgers secure element, and the basis of what makes this device so secure. 
 
-You will be presented with a private key to restore your ledger device during the initial setup. Any application secrets will be tied to this private key, and it is required to restore your wallet if ever needed.
+You will be presented with a private key to restore your Ledger device during the initial setup. Any application secrets will be tied to this private key, and it is required to restore your wallet if ever needed.
 
 Store your Ledger Device seed (mnemonic) somewhere safe, in an encrypted manner if possible (Recommended you have this information stored in multiple physical locations)
 
@@ -129,7 +129,7 @@ To initialise your Ledger Nano S device for use with the QRL App, follow these i
 6. Scroll down in the menu and chose **Switch Tree** with both buttons. You will now see **QRL (Tree 2) Not Ready**
 7. Initialize Tree 2 following the same steps above. Again this process will take about 45 minuets to complete.
 
-> Generating XMSS Tree 1 on the ledger. This will take a while, have patience. ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop1.gif) 
+> Generating XMSS Tree 1 on the Ledger. This will take a while, have patience. ![Initializing Tree 1](/assets/wallet/web/ledger-nano-s/init-crop1.gif) 
 
 Your Ledger Nano S device has been initialised for the QRL app, and contains 2 addresses (XMSS Trees) ready to deposit funds to. 2 addresses contain 256 OTS keys each which can be used to sign transactions on the QRL network.
 
@@ -156,10 +156,10 @@ This will present you with the opened QRL wallet ready to send or receive as see
 
 ![Opened QRL Ledger Nano S Wallet](/assets/wallet/web/ledger-nano-s/opened.png)
 
-> **NOTE** Ubuntu users may run into issues connecting to their ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from ledger explaining the issue and solution.
+> **NOTE** Ubuntu users may run into issues connecting to their Ledger devices. Please reference [this article *Fix-connection-issues*](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues) from Ledger explaining the issue and solution.
 {: .info}
 
-> **NOTE** Chrome Users, there is a bug with chrome that will not allow the ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
+> **NOTE** Chrome Users, there is a bug with chrome that will not allow the Ledger to work. Please use another application or download the [qrl wallet](https://theqrl.org)
 {: .info}
 
 > **NOTE** If you are a Firefox user, ensure you have enabled **u2f** before proceeding. [Enabling U2F support in Mozilla Firefox](https://support.yubico.com/support/solutions/articles/15000017511-enabling-u2f-support-in-mozilla-firefox)
