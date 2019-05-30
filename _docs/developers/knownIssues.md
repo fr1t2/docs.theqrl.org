@@ -13,23 +13,18 @@ It should be made clear that these are not "Bugs" and there is very little we ca
 
 The QRL has developed and integrated QRL's XMSS address scheme into the Ledger Nano S and have successfully launched an app with the oversight of the Ledger developers. There are a few small bugs related to the browsers and the interaction that happens with the ledger and the browser.
 
-
-### Known Issues
-
-
-> If you have come across something not working as you would expect please report it to the team in a github issue. [theQRL Ledger GitHub](https://github.com/theQRL/ledger-qrl/issues)
+> If you come across something not working as you would expect please report it to the team in a github issue. [theQRL Ledger GitHub](https://github.com/theQRL/ledger-qrl/issues)
 {: .info}
 
+### Known Issues
 
 | Github Issue Number | Issue Name | Description | Impact |
 |--------------|------------|-------------|--------| 
 | NONE | U2F Timeout  |  The browser will timeout with a "U2F Timeout" warning when attempting to transfer QRL from a Ledger, showing a consumed OTS key on the device. | Sending funds will not succeed as expected, and the OTS counter on the Ledger will become out of sync |
 
-
 #### U2F Timeout
 
 Ledger devices have been using the U2F protocol for easy and cryptographically secure second factor mechanism with the web browser since 2016. Lately, U2F timeouts have been enforced by browser applications more aggressively — which you may have noticed if you’ve ever experienced a “U2F timeout” warning. 
-
 
 **The Error -**
 
