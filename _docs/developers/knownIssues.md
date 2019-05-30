@@ -28,9 +28,7 @@ The QRL has developed and integrated QRL's XMSS address scheme into the Ledger N
 
 #### U2F Timeout
 
-Ledger devices have been using the U2F protocol for easy and cryptographically secure second factor mechanism with the web browser since 2016.
-
-Lately, U2F timeouts have been enforced by browser applications more aggressively — which you may have noticed if you’ve ever experienced a “U2F timeout” warning. 
+Ledger devices have been using the U2F protocol for easy and cryptographically secure second factor mechanism with the web browser since 2016. Lately, U2F timeouts have been enforced by browser applications more aggressively — which you may have noticed if you’ve ever experienced a “U2F timeout” warning. 
 
 
 **The Error -**
@@ -47,7 +45,7 @@ The new current recommended action is to use our desktop wallets, which can be f
 
 You can read more about the development of U2F tunnel transport for Ledger devices in their blog [Windows 10 Update: Sunsetting U2F tunnel transport for Ledger devices](https://www.ledger.com/2019/05/17/windows-10-update-sunsetting-u2f-tunnel-transport-for-ledger-devices/).
 
-> If you have attempted to send a TX with your ledger device connected to a Chrome, Brave, Opera, or Firefox browser and have "used" OTS keys, you can reset the ledger device OTS key count. See the tools section of your opened wallet using the desktop application. **Make Sure you have not used any keys successfully prior to resetting the ledger** 
+> If you have attempted to send a TX with your ledger device connected to a Chrome, Brave, Opera, or Firefox browser and are showing and erroneous OTS key, you can reset the ledger device OTS key count. See the tools section of your opened wallet using the desktop application. **Make Sure you have not used any keys successfully prior to resetting the ledger** 
 {: .info}
 
 
