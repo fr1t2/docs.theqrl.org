@@ -192,7 +192,7 @@ Your QRL address will appear on your computer, and on your Ledger Nano S device.
 
 Once you've confirmed your address on both devices, you can send your QRL address to whomever you are receiving coins from.
 
-> **NOTE** In the event you find the addresses do not match, you should immediately reach out to the QRL Team to report the issue - [security@theqrl.org](mailto://security@theqrl.org) This could occur in the event a malicious actor has taken control of the QRL Web Wallet. 
+> **NOTE** In the event you find the addresses do not match, you should immediately reach out to the QRL Team to report the issue @ [security@theqrl.org](mailto://security@theqrl.org) This could occur in the event a malicious actor has taken control of the QRL Web Wallet. 
 {: .info}
 
 ![QRL Receive](/assets/wallet/web/ledger-nano-s/receive.png)
@@ -210,7 +210,7 @@ To send QRL there are four fields you need to fill in:
 | **Recipient Address** | A valid QRL address |
 | **Amount** | How much QRL to send |
 | **Fee** | How much you are paying to make this transaction |
-| **OTS Key Index** | Enter an unused OTS Key |
+| **OTS Key Index** | Enter an unused OTS Key *should auto-populate*|
 
 Make sure everything is correct and click the confirm button. You will get another confirmation of your transaction details.
 
@@ -242,7 +242,7 @@ You will see a progress tracker while your transaction is mined into a block.
 
 ![QRL Ledger Awaiting Block](/assets/wallet/web/ledger-nano-s/ledger-await-block.png)
 
-When the transaction is confirmed in the network, your Transaction History will automatically update to reflect your transaction.
+When the transaction is confirmed in the network, your Transaction History will automatically update to reflect your transaction. You can validate this using the [Block Explorer](https://explorer.theqrl.org)
 
 ![QRL Ledger Transaction Complete](/assets/wallet/web/ledger-nano-s/ledger-txn-complete.png)
 
