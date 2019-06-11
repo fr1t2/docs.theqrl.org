@@ -67,7 +67,7 @@ Being Quantum Resistant comes with some inherent challenges. Before using the QR
 
 When you create a new wallet you create an XMSS tree, which is comprised of many one time use signatures. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. The Ledger will now hold 2 XMSS trees (QRL Addresses) in it's memory space. 
 
->**The OTS key index is limited.** You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. ~This cannot be stressed enough!~
+>**The OTS key index is limited.** You can only use each key **ONCE**. When you've used your _last_ key, you will no longer be able to sign transactions. This cannot be stressed enough!
 {: .danger}
 
 Your Ledger Nano S will keep track of OTS keys for you, however if you ever lose the device and need to reinstall on a new device, you will have to reset your XMSS index inside the [QRL Web Wallet](https://wallet.theqrl.org/). You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
@@ -99,13 +99,16 @@ This additional word is needed as much as your 24 word mnemonic to be able to re
 
 It's recommended that you track all OTS Keys used in a spreadsheet or similar media. The Nano S will keep track of your OTS keys for you, however if you ever lose the device and need to reinstall on a new Ledger Nano S you will need to know which OTS keys have been consumed, 
 
-**The basic security of XMSS is based on using any key exactly one time.**
+> **The basic security of XMSS is based on using any key exactly one time.**
+{: .info}
 
 The QRL software has been developed in such a way to help users track their OTS keys, it is ultimately up to the user to track and insure they have not re-used any keys.
 
 Once you have restored your wallet on a new Ledger, manually set the XMSS OTS key index inside the [QRL Web Wallet](https://wallet.theqrl.org/) tools section. See below to [Manually Set XMSS Index](#manually-set-xmss-index)  
 
-> **NOTE**  You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
+You can rely on the state of the node you're communicating with; however this will not keep track of failed transactions where a signature was broadcast to the network and subsequently failed. 
+
+> **NOTE**  It is best to track all OTS key usage elsewhere to ensure you never reuse the same OTS key.
 {: .info}
 
 #### Tokens and Messages
