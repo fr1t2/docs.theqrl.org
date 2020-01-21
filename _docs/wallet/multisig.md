@@ -5,15 +5,16 @@ description: The QRL Multisig address documentation
 tags: wallet
 ---
 
+With the latest QRL update and Hard Fork **Bromine**, creation of "Multisig" addresses are now possible on the QRL network. This allows multiple parties governance over how allocated funds can be spent from the multisig address. Once funds are transfered into a multisig address the configured threshold will need to be met in order to transfer funds out of the address.
 
-With the latest Hard Fork XXXX, creation of "Multisig" addresses is now possible. This creates the possibility for multiple parties to control and approve spending funds in an shared address.
+The configuration and creation of multisig addresses has been extended to the web and desktop wallets, as well as the vote and spend transactions. From the Tools section a multisig addresses can be created, initiate spend requests on multisig addresses the given QRL address is a part of, and vote on spend proposals. Below are the instructions for setting up and using multisig addresses.
 
-## What is a MultiSig address?
 
-A multisig address is a transaction ID or TX_ID consisting of multiple QRL addresses combined into a single address that can accept funds, but requires multiple signatures to transfer from the address. 
+### What is a MultiSig address?
 
-Only those addresses identified during the creation of the multisig address are allowed to vote, and depending on the weight assigned to each address some or all of the identified addresses are required to approve. 
+Multisig addresses are not typical QRL addresses in that they do not contain any OTS keys, cannot be "opened" using wallet software, and must reach a consensus of allowed signatures or votes required to transfer funds. This consensus consists of valid signatures from assigned QRL addresses who vote to spend on the given transaction. 
 
+Only those addresses identified during the creation of the multisig address are allowed to vote, and depending on the weight assigned to each address some or all of the identified addresses are required to reach consensus. Once reached the allocated fnds in the spend request will be sent to the address(s) allocated in that spend transaction.
 
 
 ## Creating a MultiSig Address
@@ -27,7 +28,7 @@ From the QRL wallet software, browse to the Tools section and select the "MultiS
 - **OTS Key Index** - the OTS key to be used for the multisig create transaction
 
 
-> Note: the there is a limit of 100 addresses that can be a part of any multisig transaction
+> Note: the there is a limit of `100 QRL addresses` that can be a part of any multisig transaction.
 {: .info}
 
 Once all of the information is entered confirm the transaction and broadcast to the network to create the multisig address. 
