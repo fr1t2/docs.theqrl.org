@@ -14,7 +14,7 @@ The configuration and creation of multisig addresses has been extended to the we
 
 Multisig addresses are not typical QRL addresses in that they do not contain any OTS keys, cannot be "opened" using wallet software, and must reach a consensus of allowed signatures or votes required to transfer funds. This consensus consists of valid signatures from assigned QRL addresses who vote to spend on the given transaction. 
 
-Only those addresses identified during the creation of the multisig address are allowed to vote, and depending on the weight assigned to each address some or all of the identified addresses are required to reach consensus. Once reached the allocated fnds in the spend request will be sent to the address(s) allocated in that spend transaction.
+Only those addresses identified during the creation of the multisig address are allowed to vote, and depending on the weight assigned to each address some or all of the identified addresses are required to reach consensus. Once reached the allocated finds in the spend request will be sent to the address(s) allocated in that spend transaction.
 
 
 ## Creating a MultiSig Address
