@@ -9,35 +9,48 @@ tags: wallet
 
 * Setting up a new wallet
 * Sending a transaction over the network - *(Send QRL)*
-* Receiving a transaction over the network - *(Get QRL)*
+* Receiving a transaction over the network - *(Receive QRL)*
 * Checking transaction details on the QRL Explorer, including your current wallet balance
 
 Being Quantum Resistant comes with some inherent challenges. Before creating your new wallet, there are a few quirks worth noting about QRL. 
+
+#### OTS Key's
+
+* OTS keys are limited based on the tree height determined during setup of the wallet
+* OTS keys must never be reused, doing so could allow deriving the master private key
+* There is a limit of OTS keys in any given wallet, Once the last key is consumed there are no more valid transactions the address can make
+
+For a more on OTS, please see the [One Time Signatures](/developers/ots)
  
-## OTS Key Index
 
-When you create a new wallet you create an XMSS tree, which is comprised of many signatures to make a signature scheme. Every signature is referenced as your OTS index or [One Time Signature](/developers/ots) key index. 
+#### QRL Address Scheme 
 
-**The OTS key index is limited.** 
+A public address is required to transfer funds into a QRL wallet, and can be shared. This starts with a **Q** and consists of 78 alpha numeric characters. 
 
-You can only use each key **ONCE**. When you've used your last key, you will no longer be able to sign transactions. This can not be stressed enough! 
+|   | Example QRL Address |
+|------|:--- |
+| **Public Address** | *Q000500fcbe807a280341b021150ddef19a4c5ac91665c9d1f63bd39230b2da10f9e57676833fb1* | 
+| **Private HexSeed** | *000500fe789da102e2f100b09c4bb6a0754eb0591c3685428a570c20aab7c49246a3dfde690893fda64d30a3d083afb2e826db* | 
+| **Private Mnemonic** | *aback filled yeast melt peel collar vast aroma our rubble pause fondly random murky dale foam menu insect bury proton shah caress pill wrong herd mecca wrist hanoi cost dire lump wire towel icing* | 
 
-> **NOTE** With your last key you must empty your wallet. If you use all of your OTS Key Indexes with funds in the wallet, these funds will be **lost FOREVER**
-{: .info}
 
-#### Best Wallet Practices 
-* Track all OTS Keys used in a spreadsheet *(ledger)*
-* Store your private keys somewhere safe, in an encrypted manner 
+Anyone with the private key for a given QRL address can unlock the wallet and transfer funds or prove ownership of the address. These keys must be kept safe at all costs.
+
+> Never share the private key for a QRL address.
+{: .danger}
+
+
+Since each OTS key can only be used once, there is a limited quantity of OTS keys per wallet. Once the last key is used, the address will no longer be able to sign transactions. *This can not be stressed enough!* 
+
 
 ## QRL Web Wallet
 
-The easiest way to generate a QRL wallet is by using the online wallet found here: [https://wallet.theqrl.org](https://wallet.theqrl.org)
+The easiest way to generate a QRL wallet is by using the official QRL online wallet found here: [https://wallet.theqrl.org](https://wallet.theqrl.org) or by installing the desktop version found on the main web page [https://theqrl.org](https://theqrl.org) 
 
 ![QRL Web Wallet](/assets/wallet/web/qrlWallet.png)
 
- > All secure XMSS operations are run in a web assembly compiled version of *qrllib* locally in your browser or desktop application. 
-
- Keys stay in the memory space of the XMSS object, which is destroyed the moment you close the wallet, browser window, or desktop application.
+ > All secure XMSS tree generating operations are run in a web assembly compiled version of *qrllib* locally in your browser or desktop application. Keys are destroyed the moment you close the wallet, browser window, or desktop application.
+ {: .info}
 
 ## Create a New Wallet
 
