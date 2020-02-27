@@ -198,6 +198,57 @@ If you would like to see all of the options you can pass along the command line 
 
 This will print all of the various options available. 
 
+```bash
+Usage: qrl [OPTIONS] COMMAND [ARGS]...
+
+  QRL Command Line Interface
+
+Options:
+  -v, --verbose       verbose output whenever possible
+  --host TEXT         remote host address
+                      [127.0.0.1]
+  --port_pub INTEGER  remote port number (public api)
+                      [19009]
+  --wallet_dir TEXT   local wallet dir
+  --json              output in json
+  --version           Show the version and exit.
+  --help              Show this message and exit.
+
+Commands:
+  slave_tx_generate    Generates Slave Transaction for
+                       the wallet
+  state                Shows Information about a
+                       Node's State
+  token_list           Fetch the list of tokens owned
+                       by an address.
+  tx_inspect           Inspected a transaction blob
+  tx_message           Message Transaction
+  tx_multi_sig_create  Creates Multi Sig Create
+                       Transaction, that...
+  tx_multi_sig_spend   Transfer coins from src to dsts
+  tx_push              Sends a signed transaction blob
+                       to a node
+  tx_token             Create Token Transaction, that
+                       results into...
+  tx_transfer          Transfer coins from src to dsts
+  tx_transfertoken     Create Transfer Token
+                       Transaction, which...
+  wallet_add           Adds an address or generates a
+                       new wallet...
+  wallet_decrypt
+  wallet_encrypt
+  wallet_gen           Generates a new wallet with one
+                       address
+  wallet_ls            Lists available wallets
+  wallet_recover       Recovers a wallet from a
+                       hexseed or mnemonic...
+  wallet_rm            Removes an address from the
+                       wallet using the...
+  wallet_secret        Provides the mnemonic/hexseed
+                       of the given...
+
+```
+
 ## Configuration 
 
 By default when the node is started it will **NOT** mine any coins. You will have to enable using a configuration file in the `{{ layout.v.qrlConf.qrlDir }}` directory. 
