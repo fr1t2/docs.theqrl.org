@@ -16,6 +16,9 @@ Testnet will restart frequently as patches are made. Official postings will be m
 > There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. 
 {: .info}
 
+> Never use a QRL address on both networks! OTS keys should never be re-used, even on separate networks.
+{: .danger}
+
 ## Testnet Installation
 
 
@@ -93,19 +96,6 @@ db_name: 'testnet-state'
 #### Genesis.yml File
 
 This file is now created automatically when you start the Testnet node. Simply start the qrl node passing the new `{{ layout.v.qrlCommands.startTestNetQRL }}`
-
-## Using the Testnet Node
-
-A TestNet node will operate exactly the same as the MainNstet node will, and all commands are the same. The command line interface is still accessed through calls to the `qrl` program. 
-
-We have a ton of information on the usage of the node, wallet creation, and various API's in our main Documentation. All of this information applies to a TestNet node as well.
-
-> Never use a QRL address on both networks! OTS keys should never be re-used, even on separate networks.
-{: .danger}
-
-You will need to generate a new TestNet wallet to interact with Testnet. Due to the way OTS keys work, the address has a high likelihood to be compromised if the OTS key is exposed more than once on the blockchain. 
-
-This is a limitation of the underlying cryptography and not a fallacy of the QRL. Additionally, if an OTS key is never exposed more than once the address completely secure.
 
 
 ## Updating TestNet Nodes
