@@ -199,54 +199,35 @@ If you would like to see all of the options you can pass along the command line 
 This will print all of the various options available. 
 
 ```bash
-Usage: qrl [OPTIONS] COMMAND [ARGS]...
+usage: start_qrl [-h] [--mining_thread_count MINING_THREAD_COUNT] [--quiet]
+                 [--qrldir QRL_DIR] [--no-colors]
+                 [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                 [--network-type {mainnet,testnet}]
+                 [--miningAddress MINING_ADDRESS]
+                 [--mockGetMeasurement MEASUREMENT] [--debug] [--mocknet]
 
-  QRL Command Line Interface
+QRL node
 
-Options:
-  -v, --verbose       verbose output whenever possible
-  --host TEXT         remote host address
-                      [127.0.0.1]
-  --port_pub INTEGER  remote port number (public api)
-                      [19009]
-  --wallet_dir TEXT   local wallet dir
-  --json              output in json
-  --version           Show the version and exit.
-  --help              Show this message and exit.
-
-Commands:
-  slave_tx_generate    Generates Slave Transaction for
-                       the wallet
-  state                Shows Information about a
-                       Nodes State
-  token_list           Fetch the list of tokens owned
-                       by an address.
-  tx_inspect           Inspected a transaction blob
-  tx_message           Message Transaction
-  tx_multi_sig_create  Creates Multi Sig Create
-                       Transaction, that...
-  tx_multi_sig_spend   Transfer coins from src to dsts
-  tx_push              Sends a signed transaction blob
-                       to a node
-  tx_token             Create Token Transaction, that
-                       results into...
-  tx_transfer          Transfer coins from src to dsts
-  tx_transfertoken     Create Transfer Token
-                       Transaction, which...
-  wallet_add           Adds an address or generates a
-                       new wallet...
-  wallet_decrypt
-  wallet_encrypt
-  wallet_gen           Generates a new wallet with one
-                       address
-  wallet_ls            Lists available wallets
-  wallet_recover       Recovers a wallet from a
-                       hexseed or mnemonic...
-  wallet_rm            Removes an address from the
-                       wallet using the...
-  wallet_secret        Provides the mnemonic/hexseed
-                       of the given...
-
+optional arguments:
+  -h, --help            show this help message and exit
+  --mining_thread_count MINING_THREAD_COUNT, -m MINING_THREAD_COUNT
+                        Number of threads for mining
+  --quiet, -q           Avoid writing data to the console
+  --qrldir QRL_DIR, -d QRL_DIR
+                        Use a different directory for node data/configuration
+  --no-colors           Disables color output
+  -l {DEBUG,INFO,WARNING,ERROR,CRITICAL}, --loglevel {DEBUG,INFO,WARNING,ERROR,CRITICAL}
+                        Set the logging level
+  --network-type {mainnet,testnet}
+                        Runs QRL Testnet Node
+  --miningAddress MINING_ADDRESS
+                        QRL Wallet address on which mining reward has to be
+                        credited.
+  --mockGetMeasurement MEASUREMENT
+                        Warning: Only for integration test, to mock
+                        get_measurement
+  --debug               Enables fault handler
+  --mocknet             Enables default mocknet settings
 ```
 
 ## Configuration 
