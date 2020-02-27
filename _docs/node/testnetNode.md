@@ -10,7 +10,9 @@ This guide will explain the installation and configuration of a TestNet node run
 
 Interacting with the QRL network while developing can present some complications, especially when dealing with live currency. There are situations where having a TestNet to interact with is beneficial. The QRL testnet is exactly that.
 
-> There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. The testnet network will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable.
+> There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. 
+
+Test-Net will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable.
 {: .info}
 
 ## Testnet Installation
