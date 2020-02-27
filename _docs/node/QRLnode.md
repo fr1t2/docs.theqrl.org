@@ -218,7 +218,7 @@ Commands:
   slave_tx_generate    Generates Slave Transaction for
                        the wallet
   state                Shows Information about a
-                       Node\'s State
+                       Nodes State
   token_list           Fetch the list of tokens owned
                        by an address.
   tx_inspect           Inspected a transaction blob
