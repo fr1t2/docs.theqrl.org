@@ -14,10 +14,10 @@ Our testnet network includes the latest code changes, improvements and releases 
 Testnet will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable. Please join our [Discord Server](https://discord.gg/jBT6BEp) for announcements or to get in touch with the team.
 
 > There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. 
-{: .warning}
+{: .info}
 
 > Never use a QRL address on both networks! OTS keys should never be re-used, even on separate networks.
-{: .danger}
+{: .warning}
 
 ## Testnet Installation
 
