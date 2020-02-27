@@ -5,9 +5,9 @@ description: The QRL Testnet Node documentation
 tags: node, testnet
 ---
 
-This guide will explain the installation and configuration of a TestNet node running on the latest QRL code base. 
+This guide will explain the installation and configuration of a Testnet node running on the latest QRL code base. 
 
-Interacting with the QRL network while developing can present some complications, especially when dealing with live currency. There are situations where having a TestNet to interact with is beneficial. The QRL testnet is exactly that.
+Interacting with the QRL network while developing can present some complications, especially when dealing with live currency. There are situations where having a Testnet to interact with is beneficial. The QRL testnet is exactly that.
 
 Our testnet network includes the latest code changes, improvements and releases that are in testing and at times, may be unstable. *It is a testnet, after all.*
 
@@ -31,7 +31,7 @@ This simplifies migration from testnet to a Main-Net node on the same system as 
 
 #### Requirements
 
-The basic requirements for a QRL TestNet node are exactly the same as [running a full node](/node/QRLnode) on Main-Net. These are requirements for the QRL node software to operate.  
+The basic requirements for a QRL Testnet node are exactly the same as [running a full node](/node/QRLnode) on Main-Net. These are requirements for the QRL node software to operate.  
 
 - Support for AES-NI
 - Support for avx2 (Used by keccak library for hashing functions)
@@ -67,13 +67,13 @@ pip3 install -U setuptools
 
 #### Start The QRL Node
 
-Now that we have QRL installed begin syncing the TestNet node. 
+Now that we have QRL installed begin syncing the Testnet node. 
 
 ```bash
 {{ layout.v.qrlCommands.startTestNetQRL }}
 ```
 
-The TestNet node will sync the entire blockchain to your computer. after syncing the chain you will begin seeing blocks added. 
+The Testnet node will sync the entire blockchain to your computer. after syncing the chain you will begin seeing blocks added. 
 
 
 
@@ -98,9 +98,9 @@ db_name: 'testnet-state'
 This file is now created automatically when you start the Testnet node. Simply start the qrl node passing the new `{{ layout.v.qrlCommands.startTestNetQRL }}`
 
 
-## Updating TestNet Nodes
+## Updating Testnet Nodes
 
-If you are running a TestNet node you will need to keep up to date as we reset testnet periodically. 
+If you are running a Testnet node you will need to keep up to date as we reset testnet periodically. 
 
 Each time the network is updated you will need to refresh some files and restart the node. Look for messages from the QRL team in the chat on Discord for updates to testnet.
 
@@ -120,15 +120,15 @@ Verify that the details match what you expect issuing the `qrl state` command. T
 
 ## Mining TestNet
 
-We encourage people to set their nodes on TestNet to allow mining. This is a great way to earn some test QRL and helps the *small* network validate transactions and propagate blocks more efficiently. 
+We encourage people to set their nodes on Testnet to allow mining. This is a great way to earn some test QRL and helps the *small* network validate transactions and propagate blocks more efficiently. 
 
 - Please note that most virtual private server providers dis-allow mining operations on shared resources. This may end up in a ban from the 3rd party system. 
 - There is no need for mining pools and GPU mining on the testnet, save that hash power for the real network. 
-- TestNet QRL is not traded, and is not worth any real value. *This is only a test...*
+- Testnet QRL is not traded, and is not worth any real value. *This is only a test...*
 
 #### Enable Mining
 
-To enable mining on your TestNet node, simply add the following to the `~/.qrl/config.yml` file and restart the node to pickup the changes.
+To enable mining on your Testnet node, simply add the following to the `~/.qrl/config.yml` file and restart the node to pickup the changes.
 
 ```bash
 mining_enabled: True
@@ -136,11 +136,11 @@ mining_address: ‘TESTNET_QRL_ADDRESS_HERE’
 mining_thread_count: 0 
 ```
 
-If you are in need of some QRL for testing on the TestNet, head over to the faucet and enter your TestNet address. You can find the link below. You will also find a link to the testnet wallet below, in case you need one of those too. 
+If you are in need of some QRL for testing on the TestNet, head over to the faucet and enter your Testnet address. You can find the link below. You will also find a link to the testnet wallet below, in case you need one of those too. 
 
 ## Testnet Links
 
-Some helpful links for the TestNet network. Since this is a completely separate blockchain, we need to use the testnet wallet and block explorer.
+Some helpful links for the Testnet network. Since this is a completely separate blockchain, we need to use the testnet wallet and block explorer.
 
 - [testnet-wallet.theqrl.org](https://testnet-wallet.theqrl.org)
 - [testnet-explorer.theqrl.org](https://testnet-explorer.theqrl.org)
