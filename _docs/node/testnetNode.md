@@ -2,39 +2,47 @@
 title: QRL Testnet Node
 categories: node
 description: The QRL Testnet Node documentation
-tags: node
+tags: node, testnet
 ---
 
-This guide will explain the installation and configuration of a TestNet node running on the latest QRL codebase.
+This guide will explain the installation and configuration of a TestNet node running on the latest QRL code base. Our testnet network includes the latest code changes, improvements and releases that are in testing and at times, may be unstable. *It is a testnet, after all.*
 
 
-Interacting with the QRL network while developing can present some complications, especially when dealing with live currency. There are situations where having a TestNet to interact with is beneficial.
+Interacting with the QRL network while developing can present some complications, especially when dealing with live currency. There are situations where having a TestNet to interact with is beneficial. The QRL testnet is exactly that.
 
-> There is no value associated with the Testnet QRL, It's only used for testing. 
+> There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. The testnet network will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable.
 {: .info}
 
 ## Testnet Installation
 
-The blockchain selection, MainNet or TestNet, is made through the configuration of the node. By passing a user configuration file to the node you can modify the blockchain that the node uses. 
 
-A TestNet node runs the same core code as a MainNet node with only user configuration changes differing. This allows full development and testing of the QRL network without fear of incompatibility when switching between codebases. 
+```
+--network-type', dest='network_type', choices=['mainnet', 'testnet'], default='mainnet', required=False, help="Runs QRL Testnet Node"
+```
+
+With the latest updates to the code, it is even easier to run a testnet node. Simply pass a command flag when the node is started and all of the required configuration and setup happens automatically. This should lower the bar for anyone wanting to run our node.
+
+Additionally starting a node with the `--network-type testnet` flag will create a new directory, placing all of the testnet chain sate files and other data into a newly created directory, `{{ layout.v.qrlConf.qrlTestnetDir }}`
+
+This simplifies migration from testnet to a Main-Net node on the same system as there is no longer the need to clear out any contents to switch between networks.
 
 
 #### Requirements
 
-The basic requirements for a QRL TestNet node, typically run on a server. 
+The basic requirements for a QRL TestNet node are exactly the same as [running a full node](/node/QRLnode) on Main-Net. These are requirements for the QRL node software to operate.  
 
 - Support for AES-NI
+- Support for avx2 (Used by keccak library for hashing functions)
 - HDD with enough storage for the blockchain as it grows
 - Reliable network connection
-- Python3.6
+- Python 3.6
 - 64 bit processor
 
 
 
 #### Install QRL
 
-Below are abridged instructions for installing QRL on Ubuntu. These instructions are identical to the full node setup. Please refer to the [QRL Node Install Doc](/node/QRLnode) for further instructions on installing QRL.
+Below are abridged instructions for installing QRL on Ubuntu. These instructions are identical to the full node setup. Please refer to the [QRL Node Install Doc](/node/QRLnode) for further information on installing the QRL Python Node.
 
 ```bash
 # Update and Upgrade packages
@@ -43,22 +51,27 @@ sudo apt update && sudo apt upgrade -y
 # Install Required dependencies
 {{ layout.v.qrlCommands.qrlRequirementsUbuntu }}
 
+## Install CMAKE version 3.10.3 manually
+{{ layout.v.qrlCommands.cmakeInstall }}
+
 # Make sure setuptools is the latest
 pip3 install -U setuptools
 
-# Install QRL 
+# Install QRL
 {{ layout.v.qrlCommands.qrlInstall }}
 ```
 
-> Do not start the node yet! You need to setup the configuration first
-{: .warning}
+> Once this is complete you can check the status of the QRL install by passing the `qrl --version` command. It should print the latest version that matches the [Github Repo](https://github.com/theqrl/qrl)
+{: .info}
 
 
 #### Config.yml File
 
-Before you start using the TestNet chain, you need to connect to other nodes running the testnet. To define this variable you need to include a config.yml file in the default QRL directory. 
+This file is automatically placed in the correct directory, no longer requiring any user interaction. You will find this in the `{{ layout.v.qrlConf.qrlTestnetDir }}` directory after starting the Test-Net node for the first time. 
 
-Insert the following lines into `~/.qrl/config.yml` *(You may need to create this directory)*
+The configuration file tells the node where to look for peers to connect to, what to expect for network settings, difficulty etc. Have a look at the [Configuration Documentation](/node/configuration) for more information on other configuration options.
+
+Below is an example of what you will find in the configuration file after starting the Test-Net node. The details may change as the node is developed and the network is reset over time.
 
 ```yml
 peer_list: [ "18.130.83.207", "35.176.41.49", "18.130.187.220", "35.176.33.242" ]
@@ -70,23 +83,38 @@ db_name: 'testnet-state'
 
 #### Genesis.yml File
 
-The QRL node needs to know some information from the genesis of the blockchain. For a MainNet node, this information is installed by default. For a TestNet node you have to pass this to the node in a properly placed `genesis.yml` file.  This file lives in the same directory as the config.yml file.
+This file is now created automatically when you start the Test-Net node. Simply start the qrl node passing the new `{{ layout.v.qrlCommands.startTestNetQRL }}`
 
-Due to the size of this file, we have included it at the [end of this document](#full-genesisyml-file). You can grab a copy of this from the  bottom of this page, from the QRL docs page at [https://docs.theqrl.org/node/genesis.yml](https://docs.theqrl.org/node/genesis.yml) or with 
-
-```bash
-wget -O ~/.qrl/genesis.yml https://docs.theqrl.org/node/testnet-genesis.yml
-```
 
 #### Start The QRL Node
 
-Now that we have QRL installed and the appropriate configuration you can `start_qrl` and begin syncing the TestNet node. 
+Now that we have QRL installed begin syncing the TestNet node. 
 
 ```bash
-{{ layout.v.qrlCommands.startQRL }}
+{{ layout.v.qrlCommands.startTestNetQRL }}
 ```
 
-The TestNet node will sync the entire blockchain to your computer, make sure you have enough space. after syncing the chain you will begin seeing blocks added. If your in a hurry you can grab the full chain in github and speed the process up a bunch. See the links below.
+The TestNet node will sync the entire blockchain to your computer. after syncing the chain you will begin seeing blocks added. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If your in a hurry you can grab the full chain in Github and speed the process up a bunch. See the links below.
 
 ## Using the Node
 

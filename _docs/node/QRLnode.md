@@ -42,7 +42,6 @@ sudo apt update && sudo apt upgrade -y
 ## Install CMAKE version 3.10.3 manually
 {{ layout.v.qrlCommands.cmakeInstall }}
 
-
 # Make sure setuptools is the latest
 pip3 install -U setuptools
 
