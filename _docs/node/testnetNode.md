@@ -16,10 +16,6 @@ Interacting with the QRL network while developing can present some complications
 ## Testnet Installation
 
 
-```
---network-type', dest='network_type', choices=['mainnet', 'testnet'], default='mainnet', required=False, help="Runs QRL Testnet Node"
-```
-
 With the latest updates to the code, it is even easier to run a testnet node. Simply pass a command flag when the node is started and all of the required configuration and setup happens automatically. This should lower the bar for anyone wanting to run our node.
 
 Additionally starting a node with the `--network-type testnet` flag will create a new directory, placing all of the testnet chain sate files and other data into a newly created directory, `{{ layout.v.qrlConf.qrlTestnetDir }}`
