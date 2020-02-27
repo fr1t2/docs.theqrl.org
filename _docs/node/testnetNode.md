@@ -13,7 +13,7 @@ Interacting with the QRL network while developing can present some complications
 > There is no value associated with the Testnet QRL, It's only used for testing and developing with the QRL. 
 {: .info}
 
-Test-Net will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable.
+Test-Net will restart frequently as patches are made. Official postings will be made to alert users of these resets where achievable. Please join our [Discord Server](https://discord.gg/jBT6BEp) for announcements or to get in touch with the team.
 
 ## Testnet Installation
 
