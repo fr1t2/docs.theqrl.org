@@ -127,7 +127,11 @@ Please use the configuration found at the end of these docs to connect to the QR
 
 ## Install Web Server
 
-You will need a web server setup somewhere pointed at the pool API port. See the README.md in the pool Github for instructions on setting up the web front end. There is an additional configuration file needed to host the web server. Most important setting is the `var api = "http://pool.FQDN_OR_IP:8117";`. ensure the port is available to the web 
+You will need a web server setup somewhere pointed at the pool API port. See the README.md in the pool Github for instructions on setting up the web front end. There is an additional configuration file needed to host the web server. 
+
+Most importantly, ensure the port is available to the web server and you can reach the address or IP externally. 
+
+* `var api = "http://pool.FQDN_OR_IP:8117";`
 
 ## Open Ports
 
