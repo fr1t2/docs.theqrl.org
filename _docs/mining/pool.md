@@ -30,10 +30,9 @@ It is assumed that the appropriate security measures have been taken to secure t
 #### Software and OS
 
 * This guide uses Ubuntu 18.04LTS
-* python 3.6 or greater is required
-* Cyyber's [Pool Software fork](https://github.com/cyyber/cryptonote-nodejs-pool/)
-  * All required dependencies specified in the repo
-  
+* python 3.6
+* All required dependencies specified in the [Pool software](https://github.com/cyyber/cryptonote-nodejs-pool/) repo
+
 ## QRL Install
 
 Follow the instructions found [docs.theqrl.org/node/QRLnode/](https://docs.theqrl.org/node/QRLnode/) to get the node started.
