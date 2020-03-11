@@ -6,9 +6,11 @@ tags: mining, pool setup, developers
 ---
 
 
-QRL uses the RandomX protocol and can be mined collectively using a centralized server running pool mining software and a collection of computers running mining software. Mining QRL requires hardware and software not covered in this document. For information on mining QRL please see our [mining documentation](https://docs.theqrl.org) or our [YouTube video channel](https://www.youtube.com/channel/UCS2PP3kR9APyRUa9kRH8-uA) for more information.
+QRL uses the RandomX protocol and can be mined collectively using a centralized pool server and a collection of computers running mining software. 
 
 This guide will walk through the steps required to get a pool up and running using [Our GithHub Fork](https://github.com/cyyber/cryptonote-nodejs-pool/) of the popular cryptonote-nodejs-pool software. This fork has been modified to run the QRL blockchain. You can use this as a basis for integrating QRL into your Pool or hosting your own private pool. 
+
+Mining QRL requires hardware and software not covered in this document. For information on mining QRL please see our [mining documentation](https://docs.theqrl.org) or our [YouTube video channel](https://www.youtube.com/channel/UCS2PP3kR9APyRUa9kRH8-uA) for more information.
 
 It is assumed that the appropriate security measures have been taken to secure the server hosting this pool software. Please follow best practice and keep software up to date.
 
