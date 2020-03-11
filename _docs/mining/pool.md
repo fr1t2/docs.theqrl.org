@@ -133,9 +133,6 @@ Most importantly, ensure the port is available to the web server and you can rea
 
 * `var api = "http://pool.FQDN_OR_IP:8117";`
 
-## Open Ports
-
-Ensure all necessary ports are open for the pool. API, miners, the QRL node and wallet all need specific ports. Which ones you open to the world is up to you, based on your security model. See the configuration below for needed port settings.
 
 ## Start The Pool
 
