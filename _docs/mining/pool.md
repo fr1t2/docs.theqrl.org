@@ -10,10 +10,7 @@ QRL uses the RandomX protocol and can be mined collectively using a centralized 
 
 This guide will walk through the steps required to get a pool up and running using [Our GithHub Fork](https://github.com/cyyber/cryptonote-nodejs-pool/) of the popular cryptonote-nodejs-pool software. This fork has been modified to run the QRL blockchain. You can use this as a basis for integrating QRL into your Pool or hosting your own private pool. 
 
-Mining QRL requires hardware and software not covered in this document. For information on mining QRL please see our [mining documentation](https://docs.theqrl.org) or our [YouTube video channel](https://www.youtube.com/channel/UCS2PP3kR9APyRUa9kRH8-uA) for more information.
-
 It is assumed that the appropriate security measures have been taken to secure the server hosting this pool software. Please follow best practice and keep software up to date.
-
 
 > Running a mining pool is not something that should be taken lightly. You need to have a good understanding of multiple complex administration and security practices. 
 {: .info}
@@ -33,10 +30,10 @@ It is assumed that the appropriate security measures have been taken to secure t
 #### Software and OS
 
 * This guide uses Ubuntu 18.04LTS
-* python 3.5 or greater is required
-* node 0.10.48
+* python 3.6 or greater is required
 * Cyyber's [Pool Software fork](https://github.com/cyyber/cryptonote-nodejs-pool/)
-
+  * All required dependencies specified in the repo
+  
 ## QRL Install
 
 Follow the instructions found [docs.theqrl.org/node/QRLnode/](https://docs.theqrl.org/node/QRLnode/) to get the node started.
