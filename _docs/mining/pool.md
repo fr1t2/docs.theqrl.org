@@ -5,7 +5,6 @@ description: The QRL Pool Setup
 tags: mining, pool setup, developers
 ---
 
-
 QRL uses the RandomX protocol and can be mined collectively using a centralized pool server and a collection of computers running mining software. 
 
 This guide will walk through the steps required to get a pool up and running using [Our GithHub Fork](https://github.com/cyyber/cryptonote-nodejs-pool/) of the popular cryptonote-nodejs-pool software. This fork has been modified to run the QRL blockchain. You can use this as a basis for integrating QRL into your Pool or hosting your own private pool. 
@@ -39,8 +38,7 @@ Follow the instructions found [docs.theqrl.org/node/QRLnode/](https://docs.theqr
 
 ### Start QRL and Sync
 
-Create a configuration file to give the QRL node instructions on how to run. By default the QRL node will look in `{{ layout.v.qrlConf.confLocation }}` You may need to create the `{{ layout.v.qrlConf.confLocation }}` directory if you have not started the node. 
-
+Create a configuration file to give the QRL node instructions on how to run. By default the QRL node will look in `{{ layout.v.qrlConf.qrlDir }}` You may need to create this directory if you have not started the node. 
 
 > Note if you are running a testnet node, you will find the active qrl configuration at `{{ layout.v.qrlConf.TestnetConfLocation }}`
 {: .info}
@@ -72,10 +70,11 @@ Verify the local node blockheight matches the [block explorer](https://explorer.
 
 The QRL requires a bridge between the RPC and gRPC that QRL utilizes. The proxy handles the communication between the pool and the QRL node.
 
+To use the proxy you must have a slaves.json file named `payment.slaves.json` in your `{{ layout.v.qrlConf.qrlDir }}`. To generate this file first you need a QRL wallet.
 
 ### QRL CLI Wallet
 
-To use the proxy you must have a slaves.json file named `payment.slaves.json` in your `{{ layout.v.qrlConf.qrlDir }}`. To generate this file first you need a QRL wallet.
+Generate a new QRL wallet.
 
 ```bash
 # Creates a QRL wallet
@@ -96,7 +95,6 @@ qrl slave_tx_generate --src 0 --master 0 --number_of_slaves 100 --access_type 0 
 
 This will create a new file called slaves.json in the same directory you are in. This transaction will require a small fee to broadcast to the network. Make sure you have enough funds to cover the fee.
 
-
 Move the file to the `slaves.json` freshly created into the `{{ layout.v.qrlConf.qrlDir }}` and rename to `payment.slaves.json`
 
 ### Start the QRL_gRPC_Proxy
@@ -106,6 +104,10 @@ Run the proxy with the following:
 ```bash
 {{ layout.v.qrlCommands.grpcProxy }}
 ```
+
+> Note: if you are running testnet, start the proxy with `--network-type testnet` to use the default testnet directory `{{ layout.v.qrlConf.qrlTestnetDir }} `. You will need to move the payments.slaves.json file to this directory as well.
+
+#### Ports 
 
 Check to see that you have open ports for the pool to communicate on using `netstat`
 
@@ -142,7 +144,6 @@ node init.js
 ```
 
 Enjoy.
-
 
 ## Pool Config File
 
